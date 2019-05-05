@@ -18,8 +18,8 @@
  * @package WordPress
  */
 
-define( 'WP_HOME', 'https://maderos.com.br' );
-define( 'WP_SITEURL', 'https://maderos.com.br' );
+define( 'WP_HOME', 'https://baeta.store' );
+define( 'WP_SITEURL', 'https://baeta.store' );
 define ('WPLANG', 'pt_BR');
 define('WP_CACHE', false); // Added by WP Rocket
 

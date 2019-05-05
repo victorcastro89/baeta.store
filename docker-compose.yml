@@ -181,7 +181,7 @@ services:
       - "--acme.entryPoint=https"
       - "--acme.dnsChallenge.provider=cloudflare"
 #      - "--acme.onHostRule=true"
-      - "--acme.domains=*.maderos.com.br"
+      - "--acme.domains=*.${PROJECT_BASE_URL}"
       - "--acme.email=victorcastro89@hotmail.com"
 #      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
