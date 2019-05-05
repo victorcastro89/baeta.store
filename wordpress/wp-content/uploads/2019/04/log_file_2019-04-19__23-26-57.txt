@@ -1,0 +1,87 @@
+
+---Downloaded files---
+The import files for: Shoptimizer Demo Data were successfully downloaded!
+Initial max execution time = 500
+Files info:
+Site URL = https://maderos.com.br
+Data file = /var/www/html/wp-content/uploads/2019/04/demo-content-import-file_2019-04-19__23-26-57.xml
+Widget file = /var/www/html/wp-content/uploads/2019/04/demo-widgets-import-file_2019-04-19__23-26-57.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---Importing widgets---
+Sidebar : 
+
+Filtrar produtos por preço - Filter by price - Widget already exists
+woocommerce_top_rated_products - Top rated products - Site does not support widget
+Nuvem de tags de produto - Tags - Widget already exists
+
+Sidebar Posts : 
+
+Texto - No Title - Widget already exists
+Arquivos - No Title - Widget already exists
+Categorias - No Title - Widget already exists
+Nuvem de tags - No Title - Widget already exists
+
+Sidebar Pages : 
+
+Posts recentes - No Title - Widget already exists
+Meta - No Title - Widget already exists
+Nuvem de tags - No Title - Widget already exists
+
+Below Header : 
+
+Texto - No Title - Widget already exists
+
+Top Bar Left : 
+
+Texto - No Title - Widget already exists
+
+Top Bar Center : 
+
+Texto - No Title - Widget already exists
+
+Top Bar Right : 
+
+HTML personalizado - No Title - Widget already exists
+
+Single Product Custom Area : 
+
+Texto - No Title - Widget already exists
+
+Floating Button Modal Content : 
+
+Texto - No Title - Widget already exists
+
+Cart Custom Area : 
+
+Texto - No Title - Widget already exists
+
+Checkout Custom Area : 
+
+Texto - No Title - Widget already exists
+
+Below Content : 
+
+HTML personalizado - Free Worldwide shipping - Widget already exists
+HTML personalizado - Easy 30 days returns - Widget already exists
+HTML personalizado - International Warranty - Widget already exists
+HTML personalizado - 100% Secure Checkout - Widget already exists
+
+Footer : 
+
+Texto - About - Widget already exists
+Texto - Help - Widget already exists
+Texto - Follow - Widget already exists
+Texto - Sign Up - Widget already exists
+
+Copyright : 
+
+Texto - No Title - Widget already exists
+Texto - No Title - Widget already exists
+
+
+
+---pt-ocdi/after_import---
+Shoptimizer demo content imported!

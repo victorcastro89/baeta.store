@@ -1,9 +1,9 @@
 <?php
- /*
+/*
   Plugin Name: WP Reset
   Plugin URI: https://wpreset.com/
   Description: Reset the site to default installation values without modifying any files. Deletes all customizations and content.
-  Version: 1.55
+  Version: 1.60
   Author: WebFactory Ltd
   Author URI: https://www.webfactoryltd.com/
   Text Domain: wp-reset
@@ -432,6 +432,9 @@ class WP_Reset
       return false;
     }
 
+    // all surveys are curently disabled
+    return false;
+
     if ($this->get_dismissed_notices('survey-' . $survey_name)) {
       return false;
     }
@@ -603,8 +606,29 @@ class WP_Reset
 
     $count = $wpdb->query("DELETE FROM $wpdb->options WHERE option_name LIKE '\_transient\_%' OR option_name LIKE '\_site\_transient\_%'");
 
+    do_action('wp_reset_delete_transients', $count);
+
     return $count;
   } // do_delete_transients
+
+
+  /**
+   * Resets all theme options (mods).
+   *
+   * @param bool $all_themes Delete mods for all themes or just the current one
+   *
+   * @return int  Number of deleted mod DB entries
+   */
+  function do_reset_theme_options($all_themes = true)
+  {
+    global $wpdb;
+
+    $count = $wpdb->query("DELETE FROM $wpdb->options WHERE option_name LIKE 'theme_mods\_%' OR option_name LIKE 'mods\_%'");
+
+    do_action('wp_reset_reset_theme_options', $count);
+
+    return $count;
+  } // do_reset_theme_options
 
 
   /**
@@ -615,8 +639,11 @@ class WP_Reset
   function do_delete_uploads()
   {
     $upload_dir = wp_get_upload_dir();
+    $this->delete_count = 0;
 
     $this->delete_folder($upload_dir['basedir'], $upload_dir['basedir']);
+
+    do_action('wp_reset_delete_uploads', $this->delete_count);
 
     return $this->delete_count;
   } // do_delete_uploads
@@ -689,6 +716,8 @@ class WP_Reset
       delete_plugins(array_keys($all_plugins));
     }
 
+    do_action('wp_reset_delete_plugins', $all_plugins, $all_plugins);
+
     return sizeof($all_plugins);
   } // do_delete_plugins
 
@@ -731,7 +760,10 @@ class WP_Reset
     if (false == $keep_default_theme) {
       update_option('template', '');
       update_option('stylesheet', '');
+      update_option('current_theme', '');
     }
+
+    do_action('wp_reset_delete_themes', $all_themes);
 
     return sizeof($all_themes);
   } // do_delete_themes
@@ -751,6 +783,8 @@ class WP_Reset
       $wpdb->query('TRUNCATE TABLE ' . $tbl['name']);
     } // foreach
 
+    do_action('wp_reset_truncate_custom_tables', $custom_tables);
+
     return sizeof($custom_tables);
   } // do_truncate_custom_tables
 
@@ -768,6 +802,8 @@ class WP_Reset
     foreach ($custom_tables as $tbl) {
       $wpdb->query('DROP TABLE IF EXISTS ' . $tbl['name']);
     } // foreach
+
+    do_action('wp_reset_drop_custom_tables', $custom_tables);
 
     return sizeof($custom_tables);
   } // do_drop_custom_tables
@@ -789,6 +825,8 @@ class WP_Reset
 
     $htaccess_path = $this->get_htaccess_path();
     clearstatcache();
+
+    do_action('wp_reset_delete_htaccess', $htaccess_path);
 
     if (!$wp_filesystem->is_readable($htaccess_path)) {
       return new WP_Error(1, 'Htaccess file does not exist; there\'s nothing to delete.');
@@ -845,6 +883,9 @@ class WP_Reset
 
     if ($tool == 'delete_transients') {
       $cnt = $this->do_delete_transients();
+      wp_send_json_success($cnt);
+    } elseif ($tool == 'reset_theme_options') {
+      $cnt = $this->do_reset_theme_options(true);
       wp_send_json_success($cnt);
     } elseif ($tool == 'delete_themes') {
       $cnt = $this->do_delete_themes(false);
@@ -1231,6 +1272,22 @@ class WP_Reset
       $notice_shown = true;
     }
 
+    // Product Hunt banner
+    if (
+      false
+      && false == $this->get_dismissed_notices('product-hunt')
+      && current_time('mysql', false) >= '2019-04-26'
+      && current_time('mysql', false) <= '2019-05-03'
+    ) {
+      echo '<div class="card notice-wrapper product-hunt"><a title="Check out WP Reset on Product Hunt" href="' . $this->generate_web_link('ph-banner', '/product-hunt-redirect/') . '" target="_blank">';
+      echo '<img src="' . $this->plugin_url . '/img/product-hunt.png" title="Check out WP Reset on Product Hunt" alt="Check out WP Reset on Product Hunt"> ';
+      echo '<h2>' . __('We\'re on <b>Product Hunt</b> this week! Come check out your favorite dev tool &amp; show support ;) <i>Thanks!</i>', 'wp-reset') . '</h2>';
+      echo '</a>';
+      echo '<a href="#" title="Dismiss notice" class="wpr-dismiss-notice dismiss-notice" data-notice="product-hunt"><span class="dashicons dashicons-no"></span></a>';
+      echo '</div>';
+      $notice_shown = true;
+    }
+
     // tabs
     echo '<div id="wp-reset-tabs" class' . __('="', 'wp-reset') . 'ui-tabs">';
 
@@ -1238,6 +1295,7 @@ class WP_Reset
     echo '<li><a href="#tab-reset">' . __('Reset', 'wp-reset') . '</a></li>';
     echo '<li><a href="#tab-tools">' . __('Tools', 'wp-reset') . '</a></li>';
     echo '<li><a href="#tab-snapshots">' . __('DB Snapshots', 'wp-reset') . '</a></li>';
+    echo '<li><a href="#tab-collections">' . __('Collections', 'wp-reset') . '</a></li>';
     echo '<li><a href="#tab-support">' . __('Support', 'wp-reset') . '</a></li>';
     echo '</ul>';
 
@@ -1251,6 +1309,10 @@ class WP_Reset
 
     echo '<div style="display: none;" id="tab-snapshots">';
     $this->tab_snapshots();
+    echo '</div>';
+
+    echo '<div style="display: none;" id="tab-collections">';
+    $this->tab_collections();
     echo '</div>';
 
     echo '<div style="display: none;" id="tab-support">';
@@ -1379,7 +1441,7 @@ class WP_Reset
 
     echo '<b>' . __('WP-CLI Support', 'wp-reset') . '</b>';
     echo '<p>' . sprintf(__('All tools available via GUI are available in WP-CLI as well. To get the list of commands run %s. Instead of the active user, the first user with admin privileges found in the database will be restored. ', 'wp-reset'), '<code>wp help reset</code>');
-    echo sprintf(__('All actions have to be confirmed. If you want to skip confirmation use the standard %s option. Please be carefull - there is NO UNDO.', 'wp-reset'), '<code>--yes</code>') . '</p>';
+    echo sprintf(__('All actions have to be confirmed. If you want to skip confirmation use the standard %s option. Please be careful - there is NO UNDO.', 'wp-reset'), '<code>--yes</code>') . '</p>';
 
     echo '<b>' . __('WP Webhooks Support', 'wp-reset') . '</b>';
     echo '<p>All WP Reset tools are integrated with <a href="https://wordpress.org/plugins/wp-webhooks/" target="_blank">WP Webhooks</a> and available as (receive data) actions. Webhooks are a standard, platform-independent way of connecting WordPress to any 3rd party system. This <a href="https://underconstructionpage.com/wp-webhooks-connect-integrate-wordpress/" target="_blank">article</a> has more info, videos and use-cases so you can see just how powerful and easy to use webhooks are.<br>';
@@ -1426,8 +1488,6 @@ class WP_Reset
    */
   private function tab_tools()
   {
-    global $wpdb;
-
     echo '<div class="card">';
     echo '<h2>' . __('Delete Transients', 'wp-reset') . '</h2>';
     echo '<p>' . __('All transient related database entries will be deleted. Including expired and non-expired transients, and orphaned transient timeout entries.<br><b>There is NO UNDO. WP Reset does not make any backups.</b>', 'wp-reset') . '</p>';
@@ -1447,6 +1507,12 @@ class WP_Reset
     }
     echo '</div>';
 
+    echo '<div class="card">';
+    echo '<h2>' . __('Reset Theme Options', 'wp-reset') . '</h2>';
+    echo '<p>' . __('All options (mods) for all themes will be reset; not just for the active theme. The tool works only for themes that use the <a href="https://codex.wordpress.org/Theme_Modification_API" target="_blank">WordPress theme modification API</a>. If options are saved in some other, custom way they won\'t be reset.<br><b>There is NO UNDO. WP Reset does not make any backups.</b>', 'wp-reset') . '</p>';
+    echo '<p><a data-btn-confirm="Reset theme options" data-text-wait="Resetting theme options. Please wait." data-text-confirm="All options (mods) for all themes will be reset. There is NO UNDO. WP Reset will not make any backups." data-text-done="Options for %n themes have been reset." data-text-done-singular="Options for one theme have been reset." class="button button-delete" href="#" id="reset-theme-options">Reset theme options</a></p>';
+    echo '</div>';
+
     $theme =  wp_get_theme();
 
     echo '<div class="card">';
@@ -1461,6 +1527,7 @@ class WP_Reset
     echo '<p><a data-btn-confirm="Delete plugins" data-text-wait="Deleting plugins. Please wait." data-text-confirm="All plugins except WP Reset will be deleted. There is NO UNDO. WP Reset will not make any backups." data-text-done="%n plugins have been deleted." data-text-done-singular="One plugin has been deleted." class="button button-delete" href="#" id="delete-plugins">Delete plugins</a></p>';
     echo '</div>';
 
+    global $wpdb;
     $custom_tables = $this->get_custom_tables();
 
     echo '<div class="card">';
@@ -1498,12 +1565,36 @@ class WP_Reset
 
 
   /**
+   * Echoes content for collections tab
+   *
+   * @return null
+   */
+  private function tab_collections()
+  {
+    echo '<div class="card">';
+    echo '<h2>' . __('What are Plugin &amp; Theme Collections', 'wp-reset') . '</h2>';
+    echo '<p>' . __('Another tools that will save your precious time! Have a set of plugins and themes that you install and activate after every reset? Or on every fresh WP installation? Well, no more clicking install/active for five minutes! Build the collection once and install it with one click the next time you need it. Collections are stored in the cloud so they\'re accessible on every site.', 'wp-reset') . '</p>';
+    echo '</div>';
+
+    echo '<div class="card">';
+    echo '<h2>' . __('So where do I click?!', 'wp-reset') . '</h2>';
+    echo '<p>' . __('We are working hard on building collections as we speak and plan to have a beta version done by late May. Want to be the first to try the beta? Or tell us to code faster? :) Give us a shout <a href="https://twitter.com/webfactoryltd" target="_blank">@webfactoryltd</a>.', 'wp-reset') . '</p>';
+    echo '</div>';
+  } // tab_collections
+
+
+  /**
    * Echoes content for support tab
    *
    * @return null
    */
   private function tab_support()
   {
+    echo '<div class="card">';
+    echo '<h2>' . __('Documentation', 'wp-reset') . '</h2>';
+    echo '<p>' . __('All tools and functions are explained in detail in <a href="' . $this->generate_web_link('support-tab', '/documentation/') . '" target="_blank">the documentation</a>. We did our best to describe how things work on both the code level and a "average user" level.', 'wp-reset') . '</p>';
+    echo '</div>';
+
     echo '<div class="card">';
     echo '<h2>' . __('Public support forum', 'wp-reset') . '</h2>';
     echo '<p>' . __('We are very active on the <a href="https://wordpress.org/support/plugin/wp-reset" target="_blank">official WP Reset support forum</a>. If you found a bug, have a feature idea or just want to say hi - please drop by. We love to hear back from our users.', 'wp-reset') . '</p>';
@@ -1516,7 +1607,7 @@ class WP_Reset
 
     echo '<div class="card">';
     echo '<h2>' . __('Care to help out?', 'wp-reset') . '</h2>';
-    echo '<p>' . __('No need for donations or anything like that :) If you can give us a <a href="https://wordpress.org/support/plugin/wp-reset/reviews/#new-post" target="_blank">five star rating</a> you\'ll help out more than you can imagine. Thank you!', 'wp-reset') . '</p>';
+    echo '<p>' . __('No need for donations or anything like that :) If you can give us a <a href="https://wordpress.org/support/plugin/wp-reset/reviews/#new-post" target="_blank">five star rating</a> you\'ll help out more than you can imagine. A public mention <a href="https://twitter.com/webfactoryltd" target="_blank">@webfactoryltd</a> also does wonders. Thank you!', 'wp-reset') . '</p>';
     echo '</div>';
   } // tab_support
 
@@ -1536,7 +1627,6 @@ class WP_Reset
     echo '<h2>' . __('Database Snapshots', 'wp-reset') . '</h2>';
     echo '<p>A snapshot is a copy of all WP database tables, standard and custom ones, saved in your database. Files are not saved or included in snapshots in any way.<br>
     Snapshots are primarily a development tool. Although they can be used for backups (and downloaded), we suggest finding a more suitable tool for live sites, such as <a href="https://wordpress.org/plugins/updraftplus/" target="_blank">UpdraftPlus</a>. Use snapshots to find out what changes a plugin made to your database or to quickly restore the dev environment after testing database related changes.<br>Restoring a snapshot does not affect other snapshots, or WP Reset settings.</p>';
-    echo '<p>Snapshots are still in development. If you see a bug or just have an idea how to make the tool better, please let us know <a href="https://twitter.com/WebFactoryLtd" target="_blank">@webfactoryltd</a> or <a href="mailto:wpreset@webfactoryltd.com?subject=WPR%20DB%20Snapshots%20Feedback">email us</a>. Thank you!</p>';
 
     $table_status = $wpdb->get_results('SHOW TABLE STATUS');
     if (is_array($table_status)) {
@@ -1759,14 +1849,16 @@ class WP_Reset
       return new WP_Error(1, 'Can\'t get table status data.');
     }
 
-    $snapshot['tbl_core'] = $tbl_core;
+    $snapshot['tbl_core']   = $tbl_core;
     $snapshot['tbl_custom'] = $tbl_custom;
-    $snapshot['tbl_rows'] = $tbl_rows;
-    $snapshot['tbl_size'] = $tbl_size;
+    $snapshot['tbl_rows']   = $tbl_rows;
+    $snapshot['tbl_size']   = $tbl_size;
 
 
     $snapshots[$uid] = $snapshot;
     update_option('wp-reset-snapshots', $snapshots);
+
+    do_action('wp_reset_create_snapshot', $uid, $snapshot);
 
     return $snapshot;
   } // create_snapshot
@@ -1797,8 +1889,11 @@ class WP_Reset
       $wpdb->query('DROP TABLE IF EXISTS ' . $table);
     }
 
+    $snapshot_copy = $snapshots[$uid];
     unset($snapshots[$uid]);
     update_option('wp-reset-snapshots', $snapshots);
+
+    do_action('wp_reset_delete_snapshot', $uid, $snapshot_copy);
 
     return true;
   } // delete_snapshot
@@ -1813,7 +1908,6 @@ class WP_Reset
    */
   function do_export_snapshot($uid = '')
   {
-    global $wpdb;
     $snapshots = $this->get_snapshots();
 
     if (strlen($uid) != 6) {
@@ -1843,6 +1937,8 @@ class WP_Reset
     } catch (Shuttle_Exception $e) {
       return new WP_Error(1, "Couldn't dump snapshot: " . $e->getMessage());
     }
+
+    do_action('wp_reset_export_snapshot', 'wp-reset-snapshot-' . $uid . '.sql.gz');
 
     return 'wp-reset-snapshot-' . $uid . '.sql.gz';
   } // export_snapshot
@@ -1903,6 +1999,8 @@ class WP_Reset
     wp_cache_flush();
     update_option('wp-reset', $this->options);
     update_option('wp-reset-snapshots', $snapshots);
+
+    do_action('wp_reset_restore_snapshot', $uid);
 
     return true;
   } // restore_snapshot
@@ -1969,7 +2067,6 @@ class WP_Reset
   function do_compare_snapshots($uid)
   {
     global $wpdb;
-    $tbl_core = $tbl_custom = 0;
     $current = $snapshot = array();
     $out = $out2 = $out3 = '';
 

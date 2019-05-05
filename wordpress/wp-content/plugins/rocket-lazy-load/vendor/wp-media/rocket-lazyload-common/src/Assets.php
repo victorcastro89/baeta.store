@@ -40,11 +40,29 @@ class Assets
             'threshold' => 300,
             'version'   => '',
             'polyfill'  => false,
+            'options'   => [],
+        ];
+
+        $allowed_options = [
+            'container'       => 1,
+            'thresholds'      => 1,
+            'data_bg'         => 1,
+            'class_error'     => 1,
+            'load_delay'      => 1,
+            'auto_unobserve'  => 1,
+            'callback_enter'  => 1,
+            'callback_exit'   => 1,
+            'callback_reveal' => 1,
+            'callback_error'  => 1,
+            'callback_finish' => 1,
+            'use_native'      => 1,
         ];
 
         $args   = wp_parse_args($args, $defaults);
         $min    = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
         $script = '';
+
+        $args['options'] = array_intersect_key($args['options'], $allowed_options);
 
         if (isset($args['polyfill']) && $args['polyfill']) {
             $script .= '<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default%2CIntersectionObserver%2CIntersectionObserverEntry"></script>';
@@ -70,32 +88,46 @@ class Assets
                             }
                         }
                     }
-                }
-            };
+                }';
+
+        if (! empty($args['options'])) {
+            $script .= ',' . PHP_EOL;
+
+            foreach ($args['options'] as $option => $value) {
+                $script .= $option . ': ' . $value . ',';
+            }
+
+            $script = rtrim($script, ',');
+        }
+
+        $script .= '};';
         
-        // Listen to the Initialized event
+        $script .= '
         window.addEventListener(\'LazyLoad::Initialized\', function (e) {
-            // Get the instance and puts it in the lazyLoadInstance variable
             var lazyLoadInstance = e.detail.instance;
         
             if (window.MutationObserver) {
                 var observer = new MutationObserver(function(mutations) {
                     mutations.forEach(function(mutation) {
-                        mutation.addedNodes.forEach(function(node) {
-                            if (typeof node.getElementsByTagName !== \'function\') {
+                        for (i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== \'function\') {
                                 return;
                             }
 
-                            imgs = node.getElementsByTagName(\'img\');
-                            iframes = node.getElementsByTagName(\'iframe\');
-                            rocket_lazy = node.getElementsByClassName(\'rocket-lazyload\');
+                           if (typeof mutation.addedNodes[i].getElementsByClassName !== \'function\') {
+                                return;
+                            }
+
+                            imgs = mutation.addedNodes[i].getElementsByTagName(\'img\');
+                            iframes = mutation.addedNodes[i].getElementsByTagName(\'iframe\');
+                            rocket_lazy = mutation.addedNodes[i].getElementsByClassName(\'rocket-lazyload\');
 
                             if ( 0 === imgs.length && 0 === iframes.length && 0 === rocket_lazy.length ) {
                                 return;
                             }
 
                             lazyLoadInstance.update();
-                        } );
+                        }
                     } );
                 } );
                 
@@ -202,12 +234,19 @@ class Assets
     public function getYoutubeThumbnailCSS($args = [])
     {
         $defaults = [
-            'base_url' => '',
+            'base_url'          => '',
+            'responsive_embeds' => true,
         ];
 
         $args = wp_parse_args($args, $defaults);
 
-        return '.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(' . $args['base_url'] . 'img/youtube.png) no-repeat;cursor:pointer}.wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0;';
+        $css = '.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(' . $args['base_url'] . 'img/youtube.png) no-repeat;cursor:pointer}';
+        
+        if ($args['responsive_embeds']) {
+            $css .= '.wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}';
+        }
+
+        return $css;
     }
 
     /**

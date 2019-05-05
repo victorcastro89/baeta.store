@@ -1,0 +1,60 @@
+2019-04-27T03:20:22+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php, na linha 55
+
+2019-04-27T03:20:26+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:20:30+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:00+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:09+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:14+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:31+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:32+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:33+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:34+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:34+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:35+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:37+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:37+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:21:37+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:22:14+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:22:15+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:22:16+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:22:47+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:24:45+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:25:11+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:25:26+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:25:31+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:25:42+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:28:35+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:29:37+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:29:45+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/builder/class.theme-modules.php, na linha 55
+
+2019-04-27T03:33:21+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php, na linha 55
+
+2019-04-27T03:39:33+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php, na linha 55
+
+2019-04-27T03:41:51+00:00 CRITICAL Cannot redeclare SearchFile() (previously declared in /var/www/html/wp-content/themes/woodmart/class.theme-modules.php:55), em /var/www/html/wp-content/themes/woodmart/inc/class.theme-modules.php, na linha 55
+

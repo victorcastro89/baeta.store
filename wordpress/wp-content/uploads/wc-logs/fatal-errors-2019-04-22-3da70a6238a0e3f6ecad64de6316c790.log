@@ -1,0 +1,18 @@
+2019-04-22T00:06:17+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on null in /var/www/html/wp-content/themes/shoptimizer-child/functions.php:200
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(288): wc_add_to_cart_message_filter('<a href="https:...', Array)
+#1 /var/www/html/wp-includes/plugin.php(208): WP_Hook->apply_filters('<a href="https:...', Array)
+#2 /var/www/html/wp-content/plugins/woocommerce/includes/wc-cart-functions.php(131): apply_filters('wc_add_to_cart_...', '<a href="https:...', Array, true)
+#3 /var/www/html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php(756): wc_add_to_cart_message(Array, true)
+#4 /var/www/html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php(729): WC_Form_Handler::add_to_cart_handler_simple(1425)
+#5 /var/www/html/wp-includes/class-wp-hook.php(286): WC_Form_Handler::add_to_cart_action('')
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#7 /var/www/html/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#8 /var/www/html/wp-settings.php(526): do_action('wp_loaded')
+#9 /var/www/html/wp-config.php(102): require_once('/var/www/html/w...')
+#10 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#11 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#12 /var/www/html/index.php(17): require('/var/www/html/w...')
+#13 {main}
+  thrown, em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 200
+

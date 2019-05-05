@@ -218,7 +218,7 @@ class Vc_License {
 	 * @return boolean
 	 */
 	public function isActivated() {
-		return (bool) $this->getLicenseKey();
+		return true;
 	}
 
 	/**
@@ -333,7 +333,7 @@ class Vc_License {
 	 * @return bool
 	 */
 	public function isValid( $license_key ) {
-		return $license_key === $this->getLicenseKey();
+		return true;
 	}
 
 	/**

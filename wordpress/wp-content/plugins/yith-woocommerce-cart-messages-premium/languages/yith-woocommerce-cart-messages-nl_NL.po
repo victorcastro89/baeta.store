@@ -1,0 +1,725 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YIT WooCommerce Cart Messages\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
+"POT-Creation-Date: 2018-11-22 07:58:11+00:00\n"
+"PO-Revision-Date: 2018-11-22 09:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: Yithemes <plugins@yithemes.com>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: plugin-fw\n"
+
+#: class.yith-woocommerce-cart-message.php:82
+msgctxt "Post Type General Name"
+msgid "YITH Cart Messages"
+msgstr "YITH Cart Messages"
+
+#: class.yith-woocommerce-cart-message.php:83
+msgctxt "Post Type Singular Name"
+msgid "YITH Cart Message"
+msgstr "YITH Cart Message"
+
+#: class.yith-woocommerce-cart-message.php:84
+msgid "Cart Message"
+msgstr "Winkelwagen bericht"
+
+#: class.yith-woocommerce-cart-message.php:85
+msgid "Parent Item:"
+msgstr "Bovenliggend item:"
+
+#: class.yith-woocommerce-cart-message.php:86
+msgid "All Messages"
+msgstr "Alle berichten"
+
+#: class.yith-woocommerce-cart-message.php:87
+msgid "View Messages"
+msgstr "Bekijk berichten"
+
+#: class.yith-woocommerce-cart-message.php:88
+#: class.yith-woocommerce-cart-message.php:89
+msgid "Add New Message"
+msgstr "Voeg nieuwe berichten toe"
+
+#: class.yith-woocommerce-cart-message.php:90
+msgid "Edit Message"
+msgstr "Bewerk bericht"
+
+#: class.yith-woocommerce-cart-message.php:91
+msgid "Update Message"
+msgstr "Bericht updaten"
+
+#: class.yith-woocommerce-cart-message.php:92
+msgid "Search Message"
+msgstr "Bericht zoeken"
+
+#: class.yith-woocommerce-cart-message.php:93
+msgid "Not found"
+msgstr "Niet gevonden"
+
+#: class.yith-woocommerce-cart-message.php:94
+msgid "Not found in Trash"
+msgstr "Niet gevonden in prullenbak"
+
+#: class.yith-woocommerce-cart-message.php:98
+msgid "ywcm_message"
+msgstr "ywcm_bericht"
+
+#: class.yith-woocommerce-cart-message.php:99
+msgid "YITH Cart Message Description"
+msgstr "YITH Cart Message beschrijving"
+
+#: class.yith-woocommerce-cart-message.php:127
+#: class.yith-woocommerce-cart-message.php:128
+msgid "YITH Cart Messages"
+msgstr "YITH Cart Messages"
+
+#: class.yith-woocommerce-cart-message.php:185
+msgid "Title"
+msgstr "Titel"
+
+#: class.yith-woocommerce-cart-message.php:186
+msgid "Type"
+msgstr "Type"
+
+#: class.yith-woocommerce-cart-message.php:187
+#: plugin-options/metabox/ywcm_metabox.php:48
+#: plugin-options/metabox/ywcm_metabox.php:111
+#: plugin-options/metabox/ywcm_metabox.php:173
+#: plugin-options/metabox/ywcm_metabox.php:201
+#: plugin-options/metabox/ywcm_metabox.php:226
+#: plugin-options/metabox/ywcm_metabox.php:288
+msgid "Message"
+msgstr "Bericht"
+
+#: class.yith-woocommerce-cart-message.php:188
+msgid "Button Text"
+msgstr "Knop tekst"
+
+#: class.yith-woocommerce-cart-message.php:189
+msgid "Button Url"
+msgstr "Klop Url"
+
+#: class.yith-woocommerce-cart-message.php:190
+msgid "Date"
+msgstr "Datum"
+
+#: class.yith-woocommerce-cart-message.php:237
+msgid "Products in Cart"
+msgstr "Producten in winkelwagen"
+
+#: class.yith-woocommerce-cart-message.php:238
+msgid "Categories in Cart"
+msgstr "Categorieën in winkelwagen"
+
+#: class.yith-woocommerce-cart-message.php:239
+msgid "Simple Message"
+msgstr "Simpel bericht"
+
+#: class.yith-woocommerce-cart-message.php:243
+msgid "Minimum Amount"
+msgstr "Minimaal bedrag"
+
+#: class.yith-woocommerce-cart-message.php:244
+msgid "Deadline"
+msgstr "Deadline"
+
+#: class.yith-woocommerce-cart-message.php:245
+msgid "Referrer"
+msgstr "Verwijzer"
+
+#: class.yith-woocommerce-cart-messages-premium.php:294
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d uur"
+msgstr[1] "%d uren"
+
+#: class.yith-woocommerce-cart-messages-premium.php:297
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuut"
+msgstr[1] "%d minuten"
+
+#: class.yith-woocommerce-cart-messages.php:172
+#: plugin-options/metabox/ywcm_metabox.php:34
+msgid "Settings"
+msgstr "Instellingen"
+
+#: class.yith-woocommerce-cart-messages.php:176
+msgid "Premium Version"
+msgstr "Premium Versie"
+
+#: class.yith-woocommerce-cart-messages.php:180
+#: plugin-options/layout-options.php:18
+msgid "Layouts"
+msgstr "Layouts"
+
+#: class.yith-woocommerce-cart-messages.php:186
+#: class.yith-woocommerce-cart-messages.php:187
+msgctxt "Plugin name, no translate."
+msgid "Cart Messages"
+msgstr "Winkelwagen Berichten"
+
+#: class.yith-woocommerce-cart-messages.php:622
+msgid "YITH WooCommerce Cart Messages"
+msgstr "YITH WooCommerce Cart Messages"
+
+#: init.php:98
+msgid ""
+"You can't activate the plugin if you haven't activate woocommerce in advance."
+msgstr ""
+"U kunt deze plugin niet activeren als u woocommerce niet vooraf heeft "
+"geactiveerd."
+
+#: plugin-options/layout-options.php:19
+msgid "In this section you can customize each message layout"
+msgstr "In deze sectie kunt u de layout van ieder bericht aanpassen"
+
+#: plugin-options/layout-options.php:32
+msgid "Layout 2"
+msgstr "Layout 2"
+
+#: plugin-options/layout-options.php:38 plugin-options/layout-options.php:115
+#: plugin-options/layout-options.php:182 plugin-options/layout-options.php:256
+#: plugin-options/layout-options.php:318
+msgid "Box background color"
+msgstr "Box achtergrondkleur"
+
+#: plugin-options/layout-options.php:46 plugin-options/layout-options.php:122
+#: plugin-options/layout-options.php:189
+msgid "Box border color"
+msgstr "Box randkleur"
+
+#: plugin-options/layout-options.php:54 plugin-options/layout-options.php:129
+#: plugin-options/layout-options.php:196 plugin-options/layout-options.php:264
+#: plugin-options/layout-options.php:326
+msgid "Box text color"
+msgstr "Box tekstkleur"
+
+#: plugin-options/layout-options.php:62
+msgid "Icon background color"
+msgstr "Icoon achtergrondkleur"
+
+#: plugin-options/layout-options.php:70 plugin-options/layout-options.php:137
+#: plugin-options/layout-options.php:204 plugin-options/layout-options.php:272
+#: plugin-options/layout-options.php:334
+msgid "Icon image"
+msgstr "Icoon afbeelding"
+
+#: plugin-options/layout-options.php:78 plugin-options/layout-options.php:144
+#: plugin-options/layout-options.php:211 plugin-options/layout-options.php:279
+#: plugin-options/layout-options.php:341
+msgid "Button background color"
+msgstr "Knop achtergrondkleur"
+
+#: plugin-options/layout-options.php:86 plugin-options/layout-options.php:152
+#: plugin-options/layout-options.php:220 plugin-options/layout-options.php:288
+#: plugin-options/layout-options.php:349
+msgid "Button background color on hover "
+msgstr "Knop achtergrondkleur op aanwijzer "
+
+#: plugin-options/layout-options.php:94 plugin-options/layout-options.php:160
+#: plugin-options/layout-options.php:228 plugin-options/layout-options.php:296
+#: plugin-options/layout-options.php:357
+msgid "Button text color"
+msgstr "Knop tekstkleur"
+
+#: plugin-options/layout-options.php:109
+msgid "Layout 3"
+msgstr "Layout 3"
+
+#: plugin-options/layout-options.php:176
+msgid "Layout 4"
+msgstr "Layout 4"
+
+#: plugin-options/layout-options.php:236
+msgid "Button border color"
+msgstr "Knop randkleur"
+
+#: plugin-options/layout-options.php:250
+msgid "Layout 5"
+msgstr "Layout 5"
+
+#: plugin-options/layout-options.php:312
+msgid "Layout 6"
+msgstr "Layout 6"
+
+#: plugin-options/metabox/ywcm_metabox.php:15
+msgid "Cart"
+msgstr "Winkelwagen"
+
+#: plugin-options/metabox/ywcm_metabox.php:18
+msgid "Checkout"
+msgstr "Checkout"
+
+#: plugin-options/metabox/ywcm_metabox.php:21
+msgid "Shop"
+msgstr "Winkel"
+
+#: plugin-options/metabox/ywcm_metabox.php:24
+msgid "Single Product"
+msgstr "Single product"
+
+#: plugin-options/metabox/ywcm_metabox.php:28
+msgid "Message Settings"
+msgstr "Berichtinstellingen"
+
+#: plugin-options/metabox/ywcm_metabox.php:37
+msgid "Message Type"
+msgstr "Berichttype"
+
+#: plugin-options/metabox/ywcm_metabox.php:38
+msgid "Choose the type of the message"
+msgstr "Kies type bericht"
+
+#: plugin-options/metabox/ywcm_metabox.php:49
+msgid ""
+"Edit the message. You can use {remaining_amount} as remaining amount "
+"required to meet the minimum order amount"
+msgstr ""
+"Bewerk het bericht. Je kunt {remaining_amount} gebruiken als noodzakelijk "
+"restbedrag om het minimale bestelbedrag te behalen"
+
+#: plugin-options/metabox/ywcm_metabox.php:60
+msgid "Minimum order amount"
+msgstr "Minimale bestelbedrag"
+
+#: plugin-options/metabox/ywcm_metabox.php:61
+msgid "Minimum order amount to encourage users to purchase more."
+msgstr "Minimale orderberbedrag om gebruikers aan te sporen meer te kopen."
+
+#: plugin-options/metabox/ywcm_metabox.php:74
+#: plugin-options/metabox/ywcm_metabox.php:133
+msgid "Threshold amount"
+msgstr "Drempelbedrag"
+
+#: plugin-options/metabox/ywcm_metabox.php:75
+msgid "Threshold amount after which notice should start appear."
+msgstr "Drempelbedrag waarna de meldingen moeten starten met verschijnen."
+
+#: plugin-options/metabox/ywcm_metabox.php:85
+msgid "Exclude coupons amount"
+msgstr "Couponbedrag uitsluiten"
+
+#: plugin-options/metabox/ywcm_metabox.php:97
+msgid "Hide the message if these products are in cart"
+msgstr "Verberg dit bericht als deze producten in de winkelwagen zitten"
+
+#: plugin-options/metabox/ywcm_metabox.php:98
+msgid "If there are these products in cart the message is not showed"
+msgstr ""
+"Als deze producten in de winkelwagen zitten, wordt het bericht niet "
+"weergegeven"
+
+#: plugin-options/metabox/ywcm_metabox.php:112
+msgid ""
+"You can edit the text using the following placeholder: "
+"<br>{remaining_quantity} indicates the remaining quantity;<br>{products} "
+"specifies which of the listed product is in the cart;<br>{quantity} "
+"indicates quantity in cart,{required_quantity} states the exact number of "
+"product to purchase."
+msgstr ""
+"U kunt de tekst aanpassen door gebruik te maken van het volgende invulveld: "
+"<br>{remaining_quantity} duidt de rest hoeveelheid aan;<br>{products} Geeft "
+"aan welke van de genoemde producten in de winkelwagen zit;<br>{quantity} "
+"geeft de hoeveelheid aan in winkelwagen,{required_quantity} geeft het exacte "
+"aantal producten aan om te kopen.\n"
+" "
+
+#: plugin-options/metabox/ywcm_metabox.php:122
+msgid "Required quantity"
+msgstr "Noodzakelijke hoeveelheid"
+
+#: plugin-options/metabox/ywcm_metabox.php:123
+#: plugin-options/metabox/ywcm_metabox.php:134
+msgid "The minimum total amount of above selected products."
+msgstr "Het minimale totaalbedrag van hierboven geselecteerde producten."
+
+#: plugin-options/metabox/ywcm_metabox.php:144
+msgid "Select products"
+msgstr "Selecteer producten"
+
+#: plugin-options/metabox/ywcm_metabox.php:145
+#: plugin-options/metabox/ywcm_metabox.php:159
+#: plugin-options/metabox/ywcm_metabox.php:417
+msgid "Leave empty to select all products of the shop"
+msgstr "Laat leeg om alle producten in de winkel te selecteren"
+
+#: plugin-options/metabox/ywcm_metabox.php:158
+msgid "Select products to exclude"
+msgstr "Selecteer producten om uit te sluiten"
+
+#: plugin-options/metabox/ywcm_metabox.php:174
+msgid ""
+"You can edit the message using <br>{categories} to state the list of "
+"categories."
+msgstr ""
+"U kunt het bericht bewerken door <br>{categories} te gebruiken voor de "
+"status van de genoemde categorieën"
+
+#: plugin-options/metabox/ywcm_metabox.php:185
+msgid "Select categories"
+msgstr "Categorieën selecteren"
+
+#: plugin-options/metabox/ywcm_metabox.php:202
+#: plugin-options/metabox/ywcm_metabox.php:289
+msgid "Edit the message"
+msgstr "Bewerk het bericht"
+
+#: plugin-options/metabox/ywcm_metabox.php:212
+msgid "Referrer url"
+msgstr "Verwijzing url"
+
+#: plugin-options/metabox/ywcm_metabox.php:213
+msgid ""
+"Show a custom message to users who reach your site through a specific URL"
+msgstr ""
+"Toon een aangepast bericht aan gebruikers die je site bereiken via een "
+"specifieke URL"
+
+#: plugin-options/metabox/ywcm_metabox.php:227
+msgid "You can edit the message with {time_remain} as a time variable."
+msgstr "U kunt het bericht bewerken met {time_remain} als een tijd variabele."
+
+#: plugin-options/metabox/ywcm_metabox.php:237
+msgid "Start hour"
+msgstr "Beginuur"
+
+#: plugin-options/metabox/ywcm_metabox.php:238
+msgid "Start hour is in 24-hour format and it can be a number from 1 to 24."
+msgstr "Begin uur is in 24-uurs formaat en het kan een getal van 1 tot 24."
+
+#: plugin-options/metabox/ywcm_metabox.php:251
+msgid "Deadline hour"
+msgstr "Deadline uur"
+
+#: plugin-options/metabox/ywcm_metabox.php:252
+msgid "Deadline hour is in 24-hour format and it can be a number from 1 to 24."
+msgstr ""
+"Deadline uur is in 24-uur opmaak en het kan een nummer zijn van 1 tot 24."
+
+#: plugin-options/metabox/ywcm_metabox.php:265
+msgid "Deadline days"
+msgstr "Deadline dagen"
+
+#: plugin-options/metabox/ywcm_metabox.php:266
+msgid "Select the days in which you want to activate and show this notice."
+msgstr "Selecteer de dagen waarin je de melding wilt activeren en weergeven."
+
+#: plugin-options/metabox/ywcm_metabox.php:271
+msgid "Sunday"
+msgstr "Zondag"
+
+#: plugin-options/metabox/ywcm_metabox.php:272
+msgid "Monday"
+msgstr "Maandag"
+
+#: plugin-options/metabox/ywcm_metabox.php:273
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+#: plugin-options/metabox/ywcm_metabox.php:274
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: plugin-options/metabox/ywcm_metabox.php:275
+msgid "Thursday"
+msgstr "Donderdag"
+
+#: plugin-options/metabox/ywcm_metabox.php:276
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: plugin-options/metabox/ywcm_metabox.php:277
+msgid "Saturday"
+msgstr "Zaterdag"
+
+#: plugin-options/metabox/ywcm_metabox.php:304
+msgid "Text Button (optional)"
+msgstr "Tekstknop (optioneel)"
+
+#: plugin-options/metabox/ywcm_metabox.php:305
+msgid ""
+"The text of the button for the action call. Leave it empty if you do not "
+"want to show it."
+msgstr ""
+"De tekst van de action call knop. Laat het leeg als u hiet niet wilt "
+"weergeven."
+
+#: plugin-options/metabox/ywcm_metabox.php:310
+msgid "Button URL (optional)"
+msgstr "Knop URL (optioneel)"
+
+#: plugin-options/metabox/ywcm_metabox.php:311
+msgid "The URL of the button of the call to action"
+msgstr "De URL van de knop van de call to action"
+
+#: plugin-options/metabox/ywcm_metabox.php:316
+msgid "Open a link in another tab"
+msgstr "Open een link in een nieuw tabblad"
+
+#: plugin-options/metabox/ywcm_metabox.php:323
+msgid "Choose a custom layout"
+msgstr "Kies een aangepaste layout"
+
+#: plugin-options/metabox/ywcm_metabox.php:327
+msgid "Layout-1 - Woocommerce Layout"
+msgstr "Layout-1 - Woocommerce Layout"
+
+#: plugin-options/metabox/ywcm_metabox.php:328
+msgid "Layout-2"
+msgstr "Layout-2"
+
+#: plugin-options/metabox/ywcm_metabox.php:329
+msgid "Layout-3"
+msgstr "Layout-3"
+
+#: plugin-options/metabox/ywcm_metabox.php:330
+msgid "Layout-4"
+msgstr "Layout-4"
+
+#: plugin-options/metabox/ywcm_metabox.php:331
+msgid "Layout-5"
+msgstr "Layout-5"
+
+#: plugin-options/metabox/ywcm_metabox.php:332
+msgid "Layout-6"
+msgstr "Layout-6"
+
+#: plugin-options/metabox/ywcm_metabox.php:340
+msgid "Show to:"
+msgstr "Tonen aan:"
+
+#: plugin-options/metabox/ywcm_metabox.php:344
+msgid "Guests and logged-in users"
+msgstr "Gasten en klanten"
+
+#: plugin-options/metabox/ywcm_metabox.php:345
+msgid "Guests"
+msgstr "Gasten"
+
+#: plugin-options/metabox/ywcm_metabox.php:346
+msgid "Logged-in users"
+msgstr "Aangemelde gebruikers"
+
+#: plugin-options/metabox/ywcm_metabox.php:351
+msgid "Choose who you want to show the message to:"
+msgstr "Kies met wie u het bericht wilt weergeven:"
+
+#: plugin-options/metabox/ywcm_metabox.php:352
+#, fuzzy
+#| msgid "Choose whether to show the message only to specific roles."
+msgid ""
+"Choose whether to show the message only to specific roles. Leave empty for "
+"all."
+msgstr ""
+"Geef aan of het bericht alleen aan specifieke rollen moet worden weergegeven."
+
+#: plugin-options/metabox/ywcm_metabox.php:361
+msgid "Restrict to the following countries:"
+msgstr "Beperken tot de volgende landen:"
+
+#: plugin-options/metabox/ywcm_metabox.php:362
+msgid ""
+"Enter here the countries to which your messages will be visible. Leave it "
+"empty to show messages to everyone."
+msgstr ""
+"Geef hier de landen op waarop uw berichten zichtbaar zullen zijn. Laat het "
+"leeg om berichten te tonen aan iedereen."
+
+#: plugin-options/metabox/ywcm_metabox.php:374
+msgid "Start date (optional)"
+msgstr "Startdatum (optioneel)"
+
+#: plugin-options/metabox/ywcm_metabox.php:375
+msgid "Choose a date when message will appear"
+msgstr "Kies datum waarop bericht wordt weergegeven"
+
+#: plugin-options/metabox/ywcm_metabox.php:381
+msgid "Expiration date (optional)"
+msgstr "Vervaldatum (optioneel)"
+
+#: plugin-options/metabox/ywcm_metabox.php:382
+msgid "Choose a date until this message will appear"
+msgstr "Kies datum tot wanneer het bericht wordt weergegeven"
+
+#: plugin-options/metabox/ywcm_metabox.php:391
+msgid "Show in"
+msgstr "Tonen in"
+
+#: plugin-options/metabox/ywcm_metabox.php:392
+msgid ""
+"Choose the woocommerce pages on which you want this notice to be active."
+msgstr "Kies de woocommerce pagina´s waarin u wilt dat deze melding actief is."
+
+#: plugin-options/metabox/ywcm_metabox.php:404
+msgid "Only in the product selected"
+msgstr "Alleen in het geselecteerde product"
+
+#: plugin-options/metabox/ywcm_metabox.php:416
+msgid "Select products where show the message"
+msgstr "Selecteer producten waar het bericht wordt getoond"
+
+#: plugin-options/metabox/ywcm_metabox.php:429
+msgid "Hide the message when the products above are on cart"
+msgstr ""
+"Verberg dit bericht als bovenstaande producten in de winkelwagen zitten"
+
+#: plugin-options/metabox/ywcm_metabox.php:440
+msgid "Cart Page Position"
+msgstr "Winkelwagen pagina positie"
+
+#: plugin-options/metabox/ywcm_metabox.php:445
+msgid "Before cart"
+msgstr "Voor winkelwagen"
+
+#: plugin-options/metabox/ywcm_metabox.php:446
+msgid "Before cart table"
+msgstr "Voor winkelwagen tabel"
+
+#: plugin-options/metabox/ywcm_metabox.php:447
+msgid "Before cart contents"
+msgstr "Voor winkelwagen inhoud"
+
+#: plugin-options/metabox/ywcm_metabox.php:448
+msgid "After cart contents"
+msgstr "Na winkelwagen inhoud"
+
+#: plugin-options/metabox/ywcm_metabox.php:449
+msgid "After cart table"
+msgstr "Na winkelwagen tabel"
+
+#: plugin-options/metabox/ywcm_metabox.php:450
+msgid "After cart"
+msgstr "Na winkelwagen"
+
+#: plugin-options/settings-options.php:21
+msgid "General settings"
+msgstr "Algemene instellingen"
+
+#: plugin-options/settings-options.php:27
+msgid "Show in cart page"
+msgstr "Weergeven in winkelwagen pagina"
+
+#: plugin-options/settings-options.php:35
+msgid "Show in checkout page"
+msgstr "Weergeven in checkout pagina"
+
+#: plugin-options/settings-options.php:43
+msgid "Show in shop page"
+msgstr "Weergeven in winkelpagina"
+
+#: plugin-options/settings-options.php:51
+msgid "Show in single product page"
+msgstr "Weergeven in single product pagina"
+
+#: yith-cart-messages-functions.php:11
+msgid "All categories"
+msgstr "Alle categorieën"
+
+#: yith-cart-messages-functions.php:26
+msgid "Dear Guest"
+msgstr "Beste gast"
+
+#: yith-cart-messages-functions.php:49
+msgid "All"
+msgstr "Alle"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+#| msgid "YITH WooCommerce Cart Messages"
+msgid "YITH WooCommerce Cart Messages Premium"
+msgstr "YITH WooCommerce Cart Messages"
+
+#. Plugin URI of the plugin/theme
+msgid "https://yithemes.com/themes/plugins/yith-woocommerce-cart-messages"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"<code><strong>YITH WooCommerce Cart Messages</strong></code> allows making "
+"your offers clearly visible by showing users a message at the very moment "
+"they pay the utmost attention, on the cart page. If you want to, you can "
+"also show them on the checkout or on the shop page. It's perfect to increase "
+"the total amount of every purchase. <a href=\"https://yithemes.com/\" target="
+"\"_blank\">Get more plugins for your e-commerce shop on <strong>YITH</"
+"strong></a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "YITH"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://yithemes.com/"
+msgstr ""
+
+#~ msgid ""
+#~ "In the YIT Plugins tab you can find the YITH WooCommerce Cart Messages "
+#~ "options.\n"
+#~ "With this menu, you can access to all the settings of our plugins that "
+#~ "you have activated.\n"
+#~ "YITH WooCommerce Cart Messages is available in an outstanding PREMIUM "
+#~ "version with many new options, <a href=\""
+#~ msgstr ""
+#~ "In het YIT Plugins tabblad vind je de YITH WooCommerce Cart Messages "
+#~ "opties.\n"
+#~ "Met dit menu heb je toegang tot alle instellingen van onze geactiveerde "
+#~ "plugins.\n"
+#~ "YITH Commerce Cart Messages is beschikbaar in een uitstekende PREMIUM "
+#~ "versie met vele nieuwe opties, <a href=\""
+
+#~ msgid "Plugin Documentation"
+#~ msgstr "Plugin Documentatie"
+
+#~ msgid ""
+#~ "In the YIT Plugins tab you can find the YITH WooCommerce Cart Messages "
+#~ "options.\r\n"
+#~ "With this menu, you can access to all the settings of our plugins that "
+#~ "you have activated.\r\n"
+#~ "YITH WooCommerce Cart Messages is available in an outstanding PREMIUM "
+#~ "version with many new options, <a href=\""
+#~ msgstr ""
+#~ "In de YIT Plugins tab vind u de YITH WooCommerce Cart Messages opties.\r\n"
+#~ "Vanuit dit menu heeft u toegang tot alle instellingen van onze plugins "
+#~ "die door u geactiveerd zijn.\r\n"
+#~ "YITH WooCommerce Cart Messages is beschikbar in een goede PREMIUM versie "
+#~ "met vele nieuwe opties, <a href=\""
+
+#~ msgid "Customers"
+#~ msgstr "Klanten"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Yith Cart Messages"
+#~ msgstr "Yith Cart Messages"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Yith Cart Message"
+#~ msgstr "Yith Cart Messages"
+
+#~ msgid "Yith Cart Message Description"
+#~ msgstr "Yith Winkelwagen bericht beschrijving"
+
+#~ msgid "Yith Cart Messages"
+#~ msgstr "Yith Winkelwagen bericht"
+
+#~ msgid ""
+#~ "Edit the message. You can use {user_name} to show the  user's name if he "
+#~ "is logged in"
+#~ msgstr ""
+#~ "Bericht bewerken. U kunt {user_name} gebruiken om de gebruikersnaam weer "
+#~ "te geven als hij is ingelogd"
+
+#~ msgid ""
+#~ "All the visitors that will get on the site from a particular origin will "
+#~ "see this message"
+#~ msgstr "Alle bezoekers die van een specifieke url afkomen zien dit bericht"

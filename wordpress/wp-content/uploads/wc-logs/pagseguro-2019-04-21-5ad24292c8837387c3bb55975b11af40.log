@@ -1,0 +1,66 @@
+04-20-2019 @ 22:26:33 - Requesting session ID...
+04-20-2019 @ 22:26:35 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => c1f502171c7b4b5aa9f87828bac9d829
+)
+
+04-20-2019 @ 22:33:27 - Requesting session ID...
+04-20-2019 @ 22:33:27 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 56cd5559b84749e78150fbef819ecfa7
+)
+
+04-20-2019 @ 22:46:55 - Requesting session ID...
+04-20-2019 @ 22:46:55 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 46e14d93f0cb4c6195b3fcad654cfd77
+)
+
+04-20-2019 @ 22:48:43 - Requesting session ID...
+04-20-2019 @ 22:48:44 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 65739a47dcb847a98bce6a96b3123e3b
+)
+
+04-20-2019 @ 22:52:57 - Requesting session ID...
+04-20-2019 @ 22:52:58 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => c885634d26c04698812c157b90518f8f
+)
+
+04-20-2019 @ 22:54:33 - Requesting session ID...
+04-20-2019 @ 22:54:33 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 9333b40083b74541844661cd83024b80
+)
+
+04-20-2019 @ 22:56:37 - Requesting session ID...
+04-20-2019 @ 22:56:38 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => b2e1fd2809694fa5b03bfb34ac33133f
+)
+
+04-20-2019 @ 23:11:51 - Requesting session ID...
+04-20-2019 @ 23:11:52 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 9eab4a3658644dcaa86d209dbf38defc
+)
+
+04-20-2019 @ 23:15:33 - Requesting session ID...
+04-20-2019 @ 23:15:33 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 6f19a6bebbba4909b1abc719caae0fd4
+)
+
+04-21-2019 @ 19:12:45 - Requesting session ID...
+04-21-2019 @ 19:12:47 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 2c3df21536e64e5686fef58bde12a594
+)
+
+04-21-2019 @ 19:13:13 - Requesting session ID...
+04-21-2019 @ 19:13:13 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => 468f5d130d3347d9b57ef13058950897
+)
+

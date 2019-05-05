@@ -94,7 +94,7 @@ class LazyloadSubscriber implements SubscriberInterface
             ],
             'wp_head'              => ['insertNoJSStyle', ROCKET_LL_INT_MAX ],
             'wp_enqueue_scripts'   => ['insertYoutubeThumbnailStyle', ROCKET_LL_INT_MAX],
-            'template_redirect'    => ['lazyload', ROCKET_LL_INT_MAX],
+            'template_redirect'    => ['lazyload', 2],
             'rocket_lazyload_html' => 'lazyloadResponsive',
             'init'                 => 'lazyloadSmilies',
         ];
@@ -141,7 +141,7 @@ class LazyloadSubscriber implements SubscriberInterface
         $args = [
             'base_url'  => ROCKET_LL_FRONT_JS_URL,
             'threshold' => $threshold,
-            'version'   => '11.0.3',
+            'version'   => '11.0.6',
             'polyfill'  => $polyfill,
         ];
 

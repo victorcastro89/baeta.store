@@ -94,7 +94,7 @@ class WP_Reset_CLI extends WP_CLI_Command
      *
      * ## OPTIONS
      *
-     * <plugins|themes|transients|uploads|custom-tables|htaccess>
+     * <plugins|themes|transients|uploads|custom-tables|htaccess|theme-options>
      * : WP objects to delete.
      *
      * [--yes]
@@ -123,8 +123,8 @@ class WP_Reset_CLI extends WP_CLI_Command
     if (empty($args[0])) {
       WP_CLI::error('Please choose a subcommand: plugins, themes, transients, uploads, htaccess or custom-tables.');
       return;
-    } elseif (false == in_array($args[0], array('themes', 'plugins', 'transients', 'uploads', 'htaccess', 'custom-tables'))) {
-      WP_CLI::error('Unknown subcommand. Please choose from: plugins, themes, transients, uploads, htaccess or custom tables.');
+    } elseif (false == in_array($args[0], array('themes', 'plugins', 'transients', 'uploads', 'htaccess', 'custom-tables', 'theme-options'))) {
+      WP_CLI::error('Unknown subcommand. Please choose from: plugins, themes, transients, uploads, htaccess, custom tables or theme-options.');
     } else {
       $subcommand = $args[0];
     }
@@ -170,9 +170,14 @@ class WP_Reset_CLI extends WP_CLI_Command
           WP_CLI::error('Htaccess file has not been deleted. ' . $tmp->get_error_message());
         }
         break;
+      case 'theme-options':
+        WP_CLI::confirm('Are you sure you want to reset all options (mods) for all themes?', $assoc_args);
+        $cnt = $wp_reset->do_reset_theme_options();
+        WP_CLI::success('Options for ' . $cnt . ' themes have been reset.');
+        break;
       default:
         // should never come to this but can't hurt
-        WP_CLI::error('Unknown subcommand. Please choose from: plugins, themes, transients, uploads, htaccess or custom-tables.');
+        WP_CLI::error('Unknown subcommand. Please choose from: plugins, themes, transients, uploads, htaccess, custom-tables or theme-options.');
         return;
     }
   } // delete

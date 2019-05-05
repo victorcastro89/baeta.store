@@ -1,0 +1,928 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YIT WooCommerce Cart Messages\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
+"POT-Creation-Date: 2018-11-22 07:58:11+00:00\n"
+"PO-Revision-Date: 2018-11-22 09:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: Yithemes <plugins@yithemes.com>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: plugin-fw\n"
+
+#: class.yith-woocommerce-cart-message.php:82
+msgctxt "Post Type General Name"
+msgid "YITH Cart Messages"
+msgstr "YITH Cart Messages"
+
+#: class.yith-woocommerce-cart-message.php:83
+msgctxt "Post Type Singular Name"
+msgid "YITH Cart Message"
+msgstr "YITH Cart Message"
+
+#: class.yith-woocommerce-cart-message.php:84
+msgid "Cart Message"
+msgstr "Messaggio carrello"
+
+#: class.yith-woocommerce-cart-message.php:85
+msgid "Parent Item:"
+msgstr "Articolo genitore:"
+
+#: class.yith-woocommerce-cart-message.php:86
+msgid "All Messages"
+msgstr "Tutti i messaggi"
+
+#: class.yith-woocommerce-cart-message.php:87
+msgid "View Messages"
+msgstr "Visualizza messaggi"
+
+#: class.yith-woocommerce-cart-message.php:88
+#: class.yith-woocommerce-cart-message.php:89
+msgid "Add New Message"
+msgstr "Aggiungi nuovo messaggio"
+
+#: class.yith-woocommerce-cart-message.php:90
+msgid "Edit Message"
+msgstr "Modifica messaggio"
+
+#: class.yith-woocommerce-cart-message.php:91
+msgid "Update Message"
+msgstr "Aggiorna messaggio"
+
+#: class.yith-woocommerce-cart-message.php:92
+msgid "Search Message"
+msgstr "Cerca messaggio"
+
+#: class.yith-woocommerce-cart-message.php:93
+msgid "Not found"
+msgstr "Non trovato"
+
+#: class.yith-woocommerce-cart-message.php:94
+msgid "Not found in Trash"
+msgstr "Non trovato nel carrello"
+
+#: class.yith-woocommerce-cart-message.php:98
+msgid "ywcm_message"
+msgstr "ywcm_message"
+
+#: class.yith-woocommerce-cart-message.php:99
+msgid "YITH Cart Message Description"
+msgstr "Descrizione YITH Cart Message "
+
+#: class.yith-woocommerce-cart-message.php:127
+#: class.yith-woocommerce-cart-message.php:128
+msgid "YITH Cart Messages"
+msgstr "YITH Cart Messages"
+
+#: class.yith-woocommerce-cart-message.php:185
+msgid "Title"
+msgstr "Titolo"
+
+#: class.yith-woocommerce-cart-message.php:186
+msgid "Type"
+msgstr "Tipologia"
+
+#: class.yith-woocommerce-cart-message.php:187
+#: plugin-options/metabox/ywcm_metabox.php:48
+#: plugin-options/metabox/ywcm_metabox.php:111
+#: plugin-options/metabox/ywcm_metabox.php:173
+#: plugin-options/metabox/ywcm_metabox.php:201
+#: plugin-options/metabox/ywcm_metabox.php:226
+#: plugin-options/metabox/ywcm_metabox.php:288
+msgid "Message"
+msgstr "Messaggio"
+
+#: class.yith-woocommerce-cart-message.php:188
+msgid "Button Text"
+msgstr "Testo pulsante"
+
+#: class.yith-woocommerce-cart-message.php:189
+msgid "Button Url"
+msgstr "URL pulsante"
+
+#: class.yith-woocommerce-cart-message.php:190
+msgid "Date"
+msgstr "Data"
+
+#: class.yith-woocommerce-cart-message.php:237
+msgid "Products in Cart"
+msgstr "Prodotti nel carrello"
+
+#: class.yith-woocommerce-cart-message.php:238
+msgid "Categories in Cart"
+msgstr "Categorie nel carrello"
+
+#: class.yith-woocommerce-cart-message.php:239
+msgid "Simple Message"
+msgstr "Messaggio semplice"
+
+#: class.yith-woocommerce-cart-message.php:243
+msgid "Minimum Amount"
+msgstr "Spesa minima"
+
+#: class.yith-woocommerce-cart-message.php:244
+msgid "Deadline"
+msgstr "Scadenza"
+
+#: class.yith-woocommerce-cart-message.php:245
+msgid "Referrer"
+msgstr "Affiliato"
+
+#: class.yith-woocommerce-cart-messages-premium.php:294
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d ora"
+msgstr[1] "%d ore"
+
+#: class.yith-woocommerce-cart-messages-premium.php:297
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minuti"
+
+#: class.yith-woocommerce-cart-messages.php:172
+#: plugin-options/metabox/ywcm_metabox.php:34
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: class.yith-woocommerce-cart-messages.php:176
+msgid "Premium Version"
+msgstr "Versione premium"
+
+#: class.yith-woocommerce-cart-messages.php:180
+#: plugin-options/layout-options.php:18
+msgid "Layouts"
+msgstr "Layout"
+
+#: class.yith-woocommerce-cart-messages.php:186
+#: class.yith-woocommerce-cart-messages.php:187
+#, fuzzy
+#| msgid "Cart Messages"
+msgctxt "Plugin name, no translate."
+msgid "Cart Messages"
+msgstr "Cart Messages"
+
+#: class.yith-woocommerce-cart-messages.php:622
+msgid "YITH WooCommerce Cart Messages"
+msgstr "YITH WooCommerce Cart Messages"
+
+#: init.php:98
+msgid ""
+"You can't activate the plugin if you haven't activate woocommerce in advance."
+msgstr ""
+"Non è possibile attivare il plugin se non hai attivato prima WooCommerce."
+
+#: plugin-options/layout-options.php:19
+msgid "In this section you can customize each message layout"
+msgstr "In questa sezione puoi personalizzare il layout di ogni messaggio"
+
+#: plugin-options/layout-options.php:32
+msgid "Layout 2"
+msgstr "Layout 2"
+
+#: plugin-options/layout-options.php:38 plugin-options/layout-options.php:115
+#: plugin-options/layout-options.php:182 plugin-options/layout-options.php:256
+#: plugin-options/layout-options.php:318
+msgid "Box background color"
+msgstr "Colore riquadro"
+
+#: plugin-options/layout-options.php:46 plugin-options/layout-options.php:122
+#: plugin-options/layout-options.php:189
+msgid "Box border color"
+msgstr "Colore bordo riquadro"
+
+#: plugin-options/layout-options.php:54 plugin-options/layout-options.php:129
+#: plugin-options/layout-options.php:196 plugin-options/layout-options.php:264
+#: plugin-options/layout-options.php:326
+msgid "Box text color"
+msgstr "Colore testo riquadro"
+
+#: plugin-options/layout-options.php:62
+msgid "Icon background color"
+msgstr "Colore icona"
+
+#: plugin-options/layout-options.php:70 plugin-options/layout-options.php:137
+#: plugin-options/layout-options.php:204 plugin-options/layout-options.php:272
+#: plugin-options/layout-options.php:334
+msgid "Icon image"
+msgstr "Immagine icona"
+
+#: plugin-options/layout-options.php:78 plugin-options/layout-options.php:144
+#: plugin-options/layout-options.php:211 plugin-options/layout-options.php:279
+#: plugin-options/layout-options.php:341
+msgid "Button background color"
+msgstr "Colore pulsante"
+
+#: plugin-options/layout-options.php:86 plugin-options/layout-options.php:152
+#: plugin-options/layout-options.php:220 plugin-options/layout-options.php:288
+#: plugin-options/layout-options.php:349
+msgid "Button background color on hover "
+msgstr "Colore pulsante al passaggio del mouse "
+
+#: plugin-options/layout-options.php:94 plugin-options/layout-options.php:160
+#: plugin-options/layout-options.php:228 plugin-options/layout-options.php:296
+#: plugin-options/layout-options.php:357
+msgid "Button text color"
+msgstr "Colore testo pulsante"
+
+#: plugin-options/layout-options.php:109
+msgid "Layout 3"
+msgstr "Layout 3"
+
+#: plugin-options/layout-options.php:176
+msgid "Layout 4"
+msgstr "Layout 4"
+
+#: plugin-options/layout-options.php:236
+msgid "Button border color"
+msgstr "Colore bordo pulsante"
+
+#: plugin-options/layout-options.php:250
+msgid "Layout 5"
+msgstr "Layout 5"
+
+#: plugin-options/layout-options.php:312
+msgid "Layout 6"
+msgstr "Layout 6"
+
+#: plugin-options/metabox/ywcm_metabox.php:15
+msgid "Cart"
+msgstr "Carrello "
+
+#: plugin-options/metabox/ywcm_metabox.php:18
+msgid "Checkout"
+msgstr "Checkout"
+
+#: plugin-options/metabox/ywcm_metabox.php:21
+msgid "Shop"
+msgstr "Shop"
+
+#: plugin-options/metabox/ywcm_metabox.php:24
+msgid "Single Product"
+msgstr "Prodotto singolo"
+
+#: plugin-options/metabox/ywcm_metabox.php:28
+msgid "Message Settings"
+msgstr "Impostazioni messaggi"
+
+#: plugin-options/metabox/ywcm_metabox.php:37
+msgid "Message Type"
+msgstr "Tipologia messaggio"
+
+#: plugin-options/metabox/ywcm_metabox.php:38
+msgid "Choose the type of the message"
+msgstr "Scegli il tipo di messaggio"
+
+#: plugin-options/metabox/ywcm_metabox.php:49
+msgid ""
+"Edit the message. You can use {remaining_amount} as remaining amount "
+"required to meet the minimum order amount"
+msgstr ""
+"Modifica il messaggio. Puoi utilizzare {remaining_amount} come importo "
+"rimanente richiesto per raggiungere il minimo di spesa per l'ordine\v"
+
+#: plugin-options/metabox/ywcm_metabox.php:60
+msgid "Minimum order amount"
+msgstr "Spesa minima ordine"
+
+#: plugin-options/metabox/ywcm_metabox.php:61
+msgid "Minimum order amount to encourage users to purchase more."
+msgstr ""
+"Spesa minima per questo ordine per spingere i tuoi utenti ad acquistare di "
+"più."
+
+#: plugin-options/metabox/ywcm_metabox.php:74
+#: plugin-options/metabox/ywcm_metabox.php:133
+msgid "Threshold amount"
+msgstr "Importo limite"
+
+#: plugin-options/metabox/ywcm_metabox.php:75
+msgid "Threshold amount after which notice should start appear."
+msgstr "Importo limite superato il quale mostrare il messaggio."
+
+#: plugin-options/metabox/ywcm_metabox.php:85
+msgid "Exclude coupons amount"
+msgstr "Escludi importo coupon"
+
+#: plugin-options/metabox/ywcm_metabox.php:97
+msgid "Hide the message if these products are in cart"
+msgstr "Nascondi il messaggio se questi prodotti sono nel carrello"
+
+#: plugin-options/metabox/ywcm_metabox.php:98
+msgid "If there are these products in cart the message is not showed"
+msgstr ""
+"Se ci sono questi prodotti nel carrello non viene mostrato il messaggio"
+
+#: plugin-options/metabox/ywcm_metabox.php:112
+msgid ""
+"You can edit the text using the following placeholder: "
+"<br>{remaining_quantity} indicates the remaining quantity;<br>{products} "
+"specifies which of the listed product is in the cart;<br>{quantity} "
+"indicates quantity in cart,{required_quantity} states the exact number of "
+"product to purchase."
+msgstr ""
+"Puoi modificare il testo utilizzando i seguenti segnaposto: "
+"<br>{remaining_quantity} indicat la quantità rimanente;<br>{products} "
+"specifiea quale dei prodotti elencati è nel carrello;<br>{quantity} indica "
+"la quantità nel carrello,{required_quantity} indica il numero esatto del "
+"prodotto da acquistare."
+
+#: plugin-options/metabox/ywcm_metabox.php:122
+msgid "Required quantity"
+msgstr "Quantità richiesta"
+
+#: plugin-options/metabox/ywcm_metabox.php:123
+#: plugin-options/metabox/ywcm_metabox.php:134
+msgid "The minimum total amount of above selected products."
+msgstr "Spesa minima totale dei prodotti sopra selezionati."
+
+#: plugin-options/metabox/ywcm_metabox.php:144
+msgid "Select products"
+msgstr "Seleziona prodotti"
+
+#: plugin-options/metabox/ywcm_metabox.php:145
+#: plugin-options/metabox/ywcm_metabox.php:159
+#: plugin-options/metabox/ywcm_metabox.php:417
+msgid "Leave empty to select all products of the shop"
+msgstr "Lascia il campo vuoto per selezionare tutti i prodotti del negozio"
+
+#: plugin-options/metabox/ywcm_metabox.php:158
+msgid "Select products to exclude"
+msgstr "Seleziona i prodotti da escludere"
+
+#: plugin-options/metabox/ywcm_metabox.php:174
+msgid ""
+"You can edit the message using <br>{categories} to state the list of "
+"categories."
+msgstr ""
+"Puoi modificare il messaggio utilizzando <br>{categories} per visualizzare "
+"l'elenco delle categorie."
+
+#: plugin-options/metabox/ywcm_metabox.php:185
+msgid "Select categories"
+msgstr "Seleziona categorie"
+
+#: plugin-options/metabox/ywcm_metabox.php:202
+#: plugin-options/metabox/ywcm_metabox.php:289
+msgid "Edit the message"
+msgstr "Modifica il messaggio"
+
+#: plugin-options/metabox/ywcm_metabox.php:212
+msgid "Referrer url"
+msgstr "URL affiliato"
+
+#: plugin-options/metabox/ywcm_metabox.php:213
+msgid ""
+"Show a custom message to users who reach your site through a specific URL"
+msgstr ""
+"Mostra un messaggio personalizzato agli utenti che raggiungo il tuo sito "
+"tramite un URL specifico"
+
+#: plugin-options/metabox/ywcm_metabox.php:227
+msgid "You can edit the message with {time_remain} as a time variable."
+msgstr ""
+"Puoi modificare il messaggio con {time_remain} da utilizzare come variabile "
+"di tempo."
+
+#: plugin-options/metabox/ywcm_metabox.php:237
+msgid "Start hour"
+msgstr ""
+
+#: plugin-options/metabox/ywcm_metabox.php:238
+#, fuzzy
+#| msgid ""
+#| "Deadline hour is in 24-hour format and it can be a number from 1 to 24."
+msgid "Start hour is in 24-hour format and it can be a number from 1 to 24."
+msgstr ""
+"L'orario per la scadenza utilizza il formato 24 ore e potrà essere un numero "
+"da 1 a 24."
+
+#: plugin-options/metabox/ywcm_metabox.php:251
+msgid "Deadline hour"
+msgstr "Orario di scadenza"
+
+#: plugin-options/metabox/ywcm_metabox.php:252
+msgid "Deadline hour is in 24-hour format and it can be a number from 1 to 24."
+msgstr ""
+"L'orario per la scadenza utilizza il formato 24 ore e potrà essere un numero "
+"da 1 a 24."
+
+#: plugin-options/metabox/ywcm_metabox.php:265
+msgid "Deadline days"
+msgstr "Giorni scadenza"
+
+#: plugin-options/metabox/ywcm_metabox.php:266
+msgid "Select the days in which you want to activate and show this notice."
+msgstr "Seleziona i giorni in cui vuoi attivare e mostrare questo avviso."
+
+#: plugin-options/metabox/ywcm_metabox.php:271
+msgid "Sunday"
+msgstr "Domenica"
+
+#: plugin-options/metabox/ywcm_metabox.php:272
+msgid "Monday"
+msgstr "Lunedì"
+
+#: plugin-options/metabox/ywcm_metabox.php:273
+msgid "Tuesday"
+msgstr "Martedì"
+
+#: plugin-options/metabox/ywcm_metabox.php:274
+msgid "Wednesday"
+msgstr "Mercoledì"
+
+#: plugin-options/metabox/ywcm_metabox.php:275
+msgid "Thursday"
+msgstr "Giovedì"
+
+#: plugin-options/metabox/ywcm_metabox.php:276
+msgid "Friday"
+msgstr "Venerdì"
+
+#: plugin-options/metabox/ywcm_metabox.php:277
+msgid "Saturday"
+msgstr "Sabato"
+
+#: plugin-options/metabox/ywcm_metabox.php:304
+msgid "Text Button (optional)"
+msgstr "Testo del pulsante (opzionale)"
+
+#: plugin-options/metabox/ywcm_metabox.php:305
+msgid ""
+"The text of the button for the action call. Leave it empty if you do not "
+"want to show it."
+msgstr ""
+"Testo del pulsante call to action. Lascia il campo vuoto se non vuoi "
+"mostrarlo."
+
+#: plugin-options/metabox/ywcm_metabox.php:310
+msgid "Button URL (optional)"
+msgstr "URL pulsante (opzionale)"
+
+#: plugin-options/metabox/ywcm_metabox.php:311
+msgid "The URL of the button of the call to action"
+msgstr "URL del pulsante call to action"
+
+#: plugin-options/metabox/ywcm_metabox.php:316
+msgid "Open a link in another tab"
+msgstr "Apri un link in un'altra tab"
+
+#: plugin-options/metabox/ywcm_metabox.php:323
+msgid "Choose a custom layout"
+msgstr "Scegli un layout personalizzato"
+
+#: plugin-options/metabox/ywcm_metabox.php:327
+msgid "Layout-1 - Woocommerce Layout"
+msgstr "Layout 1 - WooCommerce"
+
+#: plugin-options/metabox/ywcm_metabox.php:328
+msgid "Layout-2"
+msgstr "Layout 2"
+
+#: plugin-options/metabox/ywcm_metabox.php:329
+msgid "Layout-3"
+msgstr "Layout 3"
+
+#: plugin-options/metabox/ywcm_metabox.php:330
+msgid "Layout-4"
+msgstr "Layout 4"
+
+#: plugin-options/metabox/ywcm_metabox.php:331
+msgid "Layout-5"
+msgstr "Layout 5"
+
+#: plugin-options/metabox/ywcm_metabox.php:332
+msgid "Layout-6"
+msgstr "Layout 6"
+
+#: plugin-options/metabox/ywcm_metabox.php:340
+#, fuzzy
+#| msgid "Show to"
+msgid "Show to:"
+msgstr "Mostra a"
+
+#: plugin-options/metabox/ywcm_metabox.php:344
+#, fuzzy
+#| msgid "Guests and Customers"
+msgid "Guests and logged-in users"
+msgstr "Ospiti e clienti"
+
+#: plugin-options/metabox/ywcm_metabox.php:345
+msgid "Guests"
+msgstr "Ospiti"
+
+#: plugin-options/metabox/ywcm_metabox.php:346
+msgid "Logged-in users"
+msgstr ""
+
+#: plugin-options/metabox/ywcm_metabox.php:351
+#, fuzzy
+#| msgid "Choose the type of the message"
+msgid "Choose who you want to show the message to:"
+msgstr "Scegli il tipo di messaggio"
+
+#: plugin-options/metabox/ywcm_metabox.php:352
+msgid ""
+"Choose whether to show the message only to specific roles. Leave empty for "
+"all."
+msgstr ""
+
+#: plugin-options/metabox/ywcm_metabox.php:361
+msgid "Restrict to the following countries:"
+msgstr ""
+
+#: plugin-options/metabox/ywcm_metabox.php:362
+msgid ""
+"Enter here the countries to which your messages will be visible. Leave it "
+"empty to show messages to everyone."
+msgstr ""
+
+#: plugin-options/metabox/ywcm_metabox.php:374
+msgid "Start date (optional)"
+msgstr "Data di inizio (opzionale)"
+
+#: plugin-options/metabox/ywcm_metabox.php:375
+msgid "Choose a date when message will appear"
+msgstr "Scegli una data in cui mostrare il messaggio"
+
+#: plugin-options/metabox/ywcm_metabox.php:381
+msgid "Expiration date (optional)"
+msgstr "Data di scadenza (opzionale)"
+
+#: plugin-options/metabox/ywcm_metabox.php:382
+msgid "Choose a date until this message will appear"
+msgstr "Scegli la data fino a quando il messaggio apparirà"
+
+#: plugin-options/metabox/ywcm_metabox.php:391
+msgid "Show in"
+msgstr "Mostra in"
+
+#: plugin-options/metabox/ywcm_metabox.php:392
+msgid ""
+"Choose the woocommerce pages on which you want this notice to be active."
+msgstr "Scegli le pagine di WooCommerce in cui attivare l'avviso"
+
+#: plugin-options/metabox/ywcm_metabox.php:404
+msgid "Only in the product selected"
+msgstr "Solo nel prodotto selezionato"
+
+#: plugin-options/metabox/ywcm_metabox.php:416
+msgid "Select products where show the message"
+msgstr "Seleziona i prodotti in cui mostrare il messaggio"
+
+#: plugin-options/metabox/ywcm_metabox.php:429
+msgid "Hide the message when the products above are on cart"
+msgstr "Nascondi il messaggio quando i prodotti sopra sono nel carrello"
+
+#: plugin-options/metabox/ywcm_metabox.php:440
+msgid "Cart Page Position"
+msgstr "Posizione della pagina carrello"
+
+#: plugin-options/metabox/ywcm_metabox.php:445
+msgid "Before cart"
+msgstr "Prima del carrello"
+
+#: plugin-options/metabox/ywcm_metabox.php:446
+msgid "Before cart table"
+msgstr "Prima della tabella del carrello"
+
+#: plugin-options/metabox/ywcm_metabox.php:447
+msgid "Before cart contents"
+msgstr "Prima del contenuto del carrello \v"
+
+#: plugin-options/metabox/ywcm_metabox.php:448
+msgid "After cart contents"
+msgstr "Dopo il contenuto del carrello"
+
+#: plugin-options/metabox/ywcm_metabox.php:449
+msgid "After cart table"
+msgstr "Dopo la tabella del carrello"
+
+#: plugin-options/metabox/ywcm_metabox.php:450
+msgid "After cart"
+msgstr "Dopo carrello"
+
+#: plugin-options/settings-options.php:21
+msgid "General settings"
+msgstr "Impostazioni generali"
+
+#: plugin-options/settings-options.php:27
+msgid "Show in cart page"
+msgstr "Mostra nella pagina carrello"
+
+#: plugin-options/settings-options.php:35
+msgid "Show in checkout page"
+msgstr "Mostra nella pagina checkout"
+
+#: plugin-options/settings-options.php:43
+msgid "Show in shop page"
+msgstr "Mostra nella pagina shop"
+
+#: plugin-options/settings-options.php:51
+msgid "Show in single product page"
+msgstr "Mostra nella pagina singolo prodotto"
+
+#: yith-cart-messages-functions.php:11
+msgid "All categories"
+msgstr "Tutte le categorie"
+
+#: yith-cart-messages-functions.php:26
+msgid "Dear Guest"
+msgstr "Caro utente"
+
+#: yith-cart-messages-functions.php:49
+#, fuzzy
+#| msgid "All %s"
+msgid "All"
+msgstr "Tutti %s"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+#| msgid "YITH WooCommerce Cart Messages"
+msgid "YITH WooCommerce Cart Messages Premium"
+msgstr "YITH WooCommerce Cart Messages"
+
+#. Plugin URI of the plugin/theme
+msgid "https://yithemes.com/themes/plugins/yith-woocommerce-cart-messages"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"<code><strong>YITH WooCommerce Cart Messages</strong></code> allows making "
+"your offers clearly visible by showing users a message at the very moment "
+"they pay the utmost attention, on the cart page. If you want to, you can "
+"also show them on the checkout or on the shop page. It's perfect to increase "
+"the total amount of every purchase. <a href=\"https://yithemes.com/\" target="
+"\"_blank\">Get more plugins for your e-commerce shop on <strong>YITH</"
+"strong></a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "YITH"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://yithemes.com/"
+msgstr ""
+
+#~ msgid ""
+#~ "In the YIT Plugins tab you can find the YITH WooCommerce Cart Messages "
+#~ "options.\n"
+#~ "With this menu, you can access to all the settings of our plugins that "
+#~ "you have activated.\n"
+#~ "YITH WooCommerce Cart Messages is available in an outstanding PREMIUM "
+#~ "version with many new options, <a href=\""
+#~ msgstr ""
+#~ "Puoi trovare la pagina opzioni di YITH WooCommerce Cart Messages nella "
+#~ "tab YIT Plugins.\n"
+#~ "Da questo menu puoi accedere a tutte le impostazioni dei nostri plugin "
+#~ "attivati.\n"
+#~ "YITH WooCommerce Cart Messages è disponibile in un'eccellente versione "
+#~ "PREMIUM con molte nuove opzioni, <a href=\""
+
+#~ msgid "Plugin Documentation"
+#~ msgstr "Documentazione plugin"
+
+#~ msgid "Customers"
+#~ msgstr "Clienti"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Yith Cart Messages"
+#~ msgstr "YITH Cart Messages"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Yith Cart Message"
+#~ msgstr "YITH Cart Message"
+
+#~ msgid "Yith Cart Message Description"
+#~ msgstr "YITH Cart Message Descrizione"
+
+#~ msgid "Yith Cart Messages"
+#~ msgstr "YITH Cart Messages"
+
+#~ msgid ""
+#~ "All the visitors that will get on the site from a particular origin will "
+#~ "see this message"
+#~ msgstr ""
+#~ "Tutti i visitatori che arriveranno al sito attraverso uno stesso link "
+#~ "vedranno questo messaggio"
+
+#~ msgid "Button Text (optional)"
+#~ msgstr "Testo pulsante (opzionale)"
+
+#~ msgid "Expire date (optional)"
+#~ msgstr "Data di fine (opzionale)"
+
+#~ msgid "Add %s"
+#~ msgstr "Aggiungi %s"
+
+#~ msgid "Add New %s"
+#~ msgstr "Aggiungi nuovo %s"
+
+#~ msgid "Edit %s"
+#~ msgstr "Modifica %s"
+
+#~ msgid "New %s"
+#~ msgstr "Nuovo %s"
+
+#~ msgid "View %s"
+#~ msgstr "Visualizza %s"
+
+#~ msgid "Search %s"
+#~ msgstr "Cerca %s"
+
+#~ msgid "No %s found"
+#~ msgstr "Nessun %s trovato"
+
+#~ msgid "No %s found in Trash"
+#~ msgstr "Nessun %s trovato nel cestino"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "%s Categories"
+#~ msgstr "%s categorie"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "Search Categories"
+#~ msgstr "Cerca categorie"
+
+#~ msgid "All Categories"
+#~ msgstr "Tutte le categorie"
+
+#~ msgid "Parent Category"
+#~ msgstr "Categoria superiore"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Categoria superiore:"
+
+#~ msgid "Edit Category"
+#~ msgstr "Modifica categoria"
+
+#~ msgid "Update Category"
+#~ msgstr "Aggiorna categoria"
+
+#~ msgid "Add New Category"
+#~ msgstr "Aggiungi nuova categoria"
+
+#~ msgid "New Category Name"
+#~ msgstr "Nome nuova categoria"
+
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "Categories"
+#~ msgstr "Categorie"
+
+#~ msgid "%s Settings"
+#~ msgstr "%s Impostazioni"
+
+#~ msgid "Layout for this "
+#~ msgstr "Layout per questo"
+
+#~ msgid "Rewrite"
+#~ msgstr "Riscrivi"
+
+#~ msgid "Word used in the URL of each project (slug from post if empty)"
+#~ msgstr "Testo utilizzato nell'URL di ogni progetto (slug dal post se vuoto)"
+
+#~ msgid "Label in Singular"
+#~ msgstr "Etichetta singolare"
+
+#~ msgid "Set a label in singular (title of portfolio if empty)"
+#~ msgstr "Imposta etichetta singolare (titolo del portfolio se vuoto)"
+
+#~ msgid "Label in Plural"
+#~ msgstr "Etichetta plurale"
+
+#~ msgid "Set a label in plural (title of portfolio if empty)"
+#~ msgstr "Imposta etichetta plurale (titolo del portfolio se vuoto)"
+
+#~ msgid "Taxonomy"
+#~ msgstr "Tassonomia"
+
+#~ msgid ""
+#~ "If you want to use categories in the portfolio, set a name for taxonomy. "
+#~ "Name should be a slug (must not contain capital letters nor spaces) and "
+#~ "must not be more than 32 characters long (database structure restriction)."
+#~ msgstr ""
+#~ "Se vuoi utilizzare le categorie nel portfolio, definisci un nome per la "
+#~ "tassonomia. Il nome dovrà essere uno slug (non può contenere né lettere "
+#~ "maiuscole né spazi) e non deve superare i 32 caratteri (restrizione "
+#~ "strutturale di database)."
+
+#~ msgid "Taxonomy Rewrite"
+#~ msgstr "Riscrivi tassonomia"
+
+#~ msgid "Set the word for each category page URL."
+#~ msgstr "Scrivi il testo per ogni URL delle pagine categoria."
+
+#~ msgid "Single layout"
+#~ msgstr "Layout singolo"
+
+#~ msgid "Layout for single page of this portfolio"
+#~ msgstr "Layout per la singola pagina di questo portfolio"
+
+#~ msgid "layout settings"
+#~ msgstr "Impostazioni layout"
+
+#~ msgid "Quick links"
+#~ msgstr "Link rapidi"
+
+#~ msgid "Show frontend of the %s"
+#~ msgstr "Mostra frontend per %s"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Add %s by images"
+#~ msgstr "Aggiungi %s per immagini"
+
+#~ msgid "Add with multiupload"
+#~ msgstr "Aggiungi utilizzando il multiupload"
+
+#~ msgid "The changes you made will be lost if you leave this page."
+#~ msgstr "Le modifiche effettuate andranno perse se lasci la pagina."
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Impostazioni plugin"
+
+#~ msgid "YIT Plugins"
+#~ msgstr "YIT Plugins"
+
+#~ msgid "Save Changes"
+#~ msgstr "Salva modifiche"
+
+#~ msgid ""
+#~ "If you go on with this action, you will reset all options in this page."
+#~ msgstr ""
+#~ "Se procedi con questa azione, tutte le opzioni in questa pagina saranno "
+#~ "ripristinate."
+
+#~ msgid "Reset Defaults"
+#~ msgstr "Ripristina come di default"
+
+#~ msgid "Are you sure of it?"
+#~ msgstr "Sei sicuro?"
+
+#~ msgid ""
+#~ "The element you have written is already exists. Please, add another name."
+#~ msgstr ""
+#~ "L'elemento che hai inserito non esiste. Per favore, inserisci un altro "
+#~ "nome."
+
+#~ msgid "Settings saved"
+#~ msgstr "Impostazioni salvate"
+
+#~ msgid "Settings reset"
+#~ msgstr "Ripristina impostazioni"
+
+#~ msgid "Element deleted correctly."
+#~ msgstr "Elemento eliminato correttamente."
+
+#~ msgid "Element updated correctly."
+#~ msgstr "Elemento aggiornato correttamente."
+
+#~ msgid "Database imported correctly."
+#~ msgstr "Database importato correttamente."
+
+#~ msgid "An error has occurred during import. Please try again."
+#~ msgstr ""
+#~ "Si è verificato un errore durante l'importazione. Ti preghiamo di "
+#~ "riprovare."
+
+#~ msgid "The file inserted is not valid."
+#~ msgstr "Il file aggiunto non è valido."
+
+#~ msgid "Sorry, import is disabled."
+#~ msgstr "Ci dispiace, ma l'importazione non è abilitata."
+
+#~ msgid "Sorting successful."
+#~ msgstr "Ordinamento effettuato con successo."
+
+#~ msgid "Plugins Activated"
+#~ msgstr "Plugin attivati"
+
+#~ msgid ""
+#~ "From now on, you can find all plugin options in YIT Plugin menu.\n"
+#~ "                                     For each plugin installed, "
+#~ "customization settings will be available as a new entry in YIT Plugin "
+#~ "menu."
+#~ msgstr ""
+#~ "D'ora in poi, potrai trovare tutte le opzioni del plugin nel menu YIT "
+#~ "Plugin.\n"
+#~ "Per ogni plugin installato, le impostazioni di personalizzazione saranno "
+#~ "disponibili sotto una nuova voce nel menu YIT Plugins."
+
+#~ msgid "Was this review helpful to you?"
+#~ msgstr "Ti piace?"

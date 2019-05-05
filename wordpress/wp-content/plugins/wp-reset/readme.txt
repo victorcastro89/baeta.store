@@ -3,8 +3,8 @@ Tags: wordpress reset, reset wordpress, reset database, reset wordpress database
 Contributors: WebFactory, wpreset, googlemapswidget, securityninja, underconstructionpage
 Requires at least: 4.0
 Requires PHP: 5.2
-Tested up to: 5.1
-Stable tag: 1.55
+Tested up to: 5.2
+Stable tag: 1.60
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,7 @@ WP Reset has yet to be completely tested with multisite! Please be careful when 
 * Delete transients - deletes all transient related database entries. Including expired and non-expired transients, and orphaned timeout entries.
 * Delete uploads - delete all files and folder in the /uploads/ folder.
 * Delete plugins - deletes all plugins except WP Reset which remains active.
+* Reset theme options - resets all options for all themes that use the WP theme mods API.
 * Delete themes - deletes all themes.
 * Empty or delete custom tables - empties (truncates) or deletes (drops) all custom database tables.
 * Delete .htaccess file - deletes the .htaccess file. If you need to edit .htaccess without FTP use our free <a href="https://wordpress.org/plugins/wp-htaccess-editor/">WP Htaccess Editor</a> plugin.
@@ -101,6 +102,15 @@ Or if needed, upload manually;
 3. Additional tools for resetting and deleting various WordPress objects
 
 == Changelog ==
+
+= v1.60 =
+* 2019/04/15
+* bug fixes
+* new tool: Reset theme options
+* added Product Hunt banner
+* added actions (hooks) to all tools and snapshot actions; all action names start with "wp-reset-"
+* removed features survey
+* announced plugin & theme collections
 
 = v1.55 =
 * 2019/03/25

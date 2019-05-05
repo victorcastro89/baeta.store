@@ -33,6 +33,15 @@ jQuery(document).ready(function($) {
     return false;
   }); // delete uploads
 
+  // reset theme options (mods)
+  $('.tools_page_wp-reset').on('click', '#reset-theme-options', 'click', function(e) {
+    e.preventDefault();
+
+    run_tool(this, 'reset_theme_options');
+
+    return false;
+  }); // reset theme options
+
   // delete themes
   $('.tools_page_wp-reset').on('click', '#delete-themes', 'click', function(e) {
     e.preventDefault();

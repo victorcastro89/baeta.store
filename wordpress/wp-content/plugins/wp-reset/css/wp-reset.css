@@ -86,6 +86,7 @@
 
 .tools_page_wp-reset p {
   line-height: 1.7;
+  font-size: 14px;
 }
 
 .tools_page_wp-reset .button-delete:hover {
@@ -166,6 +167,10 @@
 
 .tools_page_wp-reset table .delete-snapshot {
   margin: 0;
+}
+
+.tools_page_wp-reset table .delete-snapshot:hover {
+  color: rgb(221, 48, 54);
 }
 
 .tools_page_wp-reset .no-padding-bottom {
@@ -377,6 +382,12 @@
   min-width: 100px;
   border-top: 3px solid transparent;
   border-bottom: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 782px) {
+  .tools_page_wp-reset .ui-tabs ul.ui-tabs-nav li {
+    min-width: inherit;
+  }
 }
 
 .tools_page_wp-reset .ui-tabs ul.ui-tabs-nav li .label {
@@ -647,4 +658,52 @@
 
 .webhooks-dialog .plain-list li {
   text-indent: -21px;
+}
+
+.product-hunt {
+  background-color: #df6949;
+  border: 2px solid transparent;
+  margin-bottom: 20px;
+}
+
+.product-hunt .wpr-dismiss-notice {
+  position: absolute;
+  right: 0.9em;
+  top: 0.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.product-hunt .wpr-dismiss-notice:hover {
+  color: #666;
+}
+
+.product-hunt b {
+  font-weight: bolder;
+}
+
+.product-hunt h2 {
+  display: inline-block;
+  color: white;
+  padding-left: 20px;
+  width: calc(100% - 100px);
+  vertical-align: top;
+}
+
+.product-hunt a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product-hunt a:focus {
+  box-shadow: none;
+}
+
+.product-hunt:hover {
+  border: 2px solid #666;
+}
+
+.product-hunt img {
+  height: auto;
+  width: 70px;
 }

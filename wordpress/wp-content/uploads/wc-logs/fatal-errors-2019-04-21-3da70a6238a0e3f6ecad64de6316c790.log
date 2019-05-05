@@ -1,0 +1,32 @@
+2019-04-21T22:38:35+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR), em /var/www/html/wp-content/themes/shoptimizer-child/woocommerce/single-product/add-to-cart/variable.php, na linha 80
+
+2019-04-21T22:39:07+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR), em /var/www/html/wp-content/themes/shoptimizer-child/woocommerce/single-product/add-to-cart/variable.php, na linha 80
+
+2019-04-21T22:39:18+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR), em /var/www/html/wp-content/themes/shoptimizer-child/woocommerce/single-product/add-to-cart/variable.php, na linha 80
+
+2019-04-21T23:36:00+00:00 CRITICAL syntax error, unexpected '}', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 204
+
+2019-04-21T23:36:07+00:00 CRITICAL syntax error, unexpected '}', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 204
+
+2019-04-21T23:37:31+00:00 CRITICAL syntax error, unexpected '<', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 203
+
+2019-04-21T23:39:14+00:00 CRITICAL syntax error, unexpected '<', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 203
+
+2019-04-21T23:39:55+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 203
+
+2019-04-21T23:40:12+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 203
+
+2019-04-21T23:44:48+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 203
+
+2019-04-21T23:45:14+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 203
+
+2019-04-21T23:46:37+00:00 CRITICAL syntax error, unexpected '}', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 206
+
+2019-04-21T23:47:14+00:00 CRITICAL syntax error, unexpected '}', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 206
+
+2019-04-21T23:49:10+00:00 CRITICAL syntax error, unexpected '}', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 206
+
+2019-04-21T23:49:14+00:00 CRITICAL syntax error, unexpected '}', expecting ';', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 206
+
+2019-04-21T23:49:44+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')', em /var/www/html/wp-content/themes/shoptimizer-child/functions.php, na linha 203
+

@@ -1,0 +1,103 @@
+
+---Downloaded files---
+The import files for: Shoptimizer Demo Data were successfully downloaded!
+Initial max execution time = 500
+Files info:
+Site URL = https://maderos.com.br
+Data file = /var/www/html/wp-content/uploads/2019/04/demo-content-import-file_2019-04-22__23-51-27.xml
+Widget file = /var/www/html/wp-content/uploads/2019/04/demo-widgets-import-file_2019-04-22__23-51-27.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Filtrar produtos por preço - Filter by price - Imported
+Produtos por avaliação - Top rated products - Imported
+Nuvem de tags de produto - Tags - Imported
+
+Sidebar Posts : 
+
+Texto - No Title - Imported
+Arquivos - No Title - Imported
+Categorias - No Title - Imported
+Nuvem de tags - No Title - Imported
+
+Sidebar Pages : 
+
+Posts recentes - No Title - Imported
+Meta - No Title - Imported
+Nuvem de tags - No Title - Imported
+
+Below Header : 
+
+Texto - No Title - Imported
+
+Top Bar Left : 
+
+Texto - No Title - Imported
+
+Top Bar Center : 
+
+Texto - No Title - Imported
+
+Top Bar Right : 
+
+HTML personalizado - No Title - Imported
+
+Single Product Custom Area : 
+
+Texto - No Title - Imported
+
+Floating Button Modal Content : 
+
+Texto - No Title - Imported
+
+Cart Custom Area : 
+
+Texto - No Title - Imported
+
+Checkout Custom Area : 
+
+Texto - No Title - Imported
+
+Below Content : 
+
+HTML personalizado - Free Worldwide shipping - Imported
+HTML personalizado - Easy 30 days returns - Imported
+HTML personalizado - International Warranty - Imported
+HTML personalizado - 100% Secure Checkout - Imported
+
+Footer : 
+
+Texto - About - Imported
+Texto - Help - Imported
+Texto - Follow - Imported
+Texto - Sign Up - Imported
+
+Copyright : 
+
+Texto - No Title - Imported
+Texto - No Title - Imported
+
+
+
+---pt-ocdi/after_import---
+Shoptimizer demo content imported!
