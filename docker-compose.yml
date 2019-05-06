@@ -162,7 +162,6 @@ services:
       - "traefik.port=80"
       - "traefik.frontend.rule=Host:pma.${PROJECT_BASE_URL}"
       - "traefik.enable=true"
-      
   traefik:
     image: traefik
     container_name: traefik
@@ -173,15 +172,15 @@ services:
       - --docker 
       - --logLevel=INFO
       - "--api"
-      - "--entrypoints=Name:http Address::80 # Redirect.EntryPoint:https" 
-      - "--entrypoints=Name:https Address::443 TLS"
+      - "--entrypoints=Name:http Address::80  Redirect.regex:^http://www.baeta.store/(.*) Redirect.replacement=https://baeta.store/$$1"  #Redirect.EntryPoint:https" 
+      - "--entrypoints=Name:https Address::443 Redirect.regex:^https://www.baeta.store/(.*) Redirect.replacement=https://baeta.store/$$1 TLS"
       - "--defaultentrypoints=http,https"
       - "--acme"
-      - "--acme.storage=./acme.json"
+      - "--acme.storage=acme.json"
       - "--acme.entryPoint=https"
       - "--acme.dnsChallenge.provider=cloudflare"
-#      - "--acme.onHostRule=true"
-      - "--acme.domains=*.${PROJECT_BASE_URL}"
+      - "--acme.onHostRule=true"
+      - "--acme.domains=*.${PROJECT_BASE_URL},baeta.store"
       - "--acme.email=victorcastro89@hotmail.com"
 #      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
@@ -200,7 +199,9 @@ services:
       - "traefik.frontend.rule=Host:traefik.${PROJECT_BASE_URL}"
       - "traefik.enable=true"
       - "traefik.frontend.auth.basic.users= victor:$$apr1$$nGdEqwrj$$zMXoC4r6ARkIDDBfNtydw."
-    
+      - traefik.entryPoints.https.redirect.regex=^http:\/\/(www\.)*(baeta\.store)(.*)
+      - traefik.entryPoints.https.redirect.replacement= https://$$2/$$3 
+   
   mariadb:
     image: wodby/mariadb:$MARIADB_TAG
     container_name: "mariadb"
