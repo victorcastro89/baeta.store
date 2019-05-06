@@ -172,8 +172,8 @@ services:
       - --docker 
       - --logLevel=INFO
       - "--api"
-      - "--entrypoints=Name:http Address::80  Redirect.regex:^http://www.baeta.store/(.*) Redirect.replacement=https://baeta.store/$$1"  #Redirect.EntryPoint:https" 
-      - "--entrypoints=Name:https Address::443 Redirect.regex:^https://www.baeta.store/(.*) Redirect.replacement=https://baeta.store/$$1 TLS"
+      - "--entrypoints=Name:http Address::80  Redirect.regex:^http://www.baeta.store/(.*) Redirect.replacement:https://baeta.store/$$1"  #Redirect.EntryPoint:https" 
+      - "--entrypoints=Name:https Address::443 Redirect.regex:^https://www.baeta.store/(.*) Redirect.replacement:https://baeta.store/$$1 TLS"
       - "--defaultentrypoints=http,https"
       - "--acme"
       - "--acme.storage=acme.json"
@@ -199,8 +199,8 @@ services:
       - "traefik.frontend.rule=Host:traefik.${PROJECT_BASE_URL}"
       - "traefik.enable=true"
       - "traefik.frontend.auth.basic.users= victor:$$apr1$$nGdEqwrj$$zMXoC4r6ARkIDDBfNtydw."
-      - traefik.entryPoints.https.redirect.regex=^http:\/\/(www\.)*(baeta\.store)(.*)
-      - traefik.entryPoints.https.redirect.replacement= https://$$2/$$3 
+   #   - traefik.entryPoints.https.redirect.regex=^http:\/\/(www\.)*(baeta\.store)(.*)
+  #- traefik.entryPoints.https.redirect.replacement= https://$$2/$$3 
    
   mariadb:
     image: wodby/mariadb:$MARIADB_TAG
