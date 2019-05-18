@@ -21,7 +21,7 @@
 define( 'WP_HOME', 'https://baeta.store' );
 define( 'WP_SITEURL', 'https://baeta.store' );
 define ('WPLANG', 'pt_BR');
-define('WP_CACHE', false); // Added by WP Rocket
+define('WP_CACHE', true); // Added by WP Rocket
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
